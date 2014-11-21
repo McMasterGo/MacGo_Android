@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              style="@style/AppTheme">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:text="Log In"
+            android:id="@+id/signIn_bt"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="159dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="16dp"/>
+
+    <EditText
+            android:layout_width="369dp"
+            android:layout_height="64dp"
+            android:id="@+id/user_name"
+            android:hint="Username"
+            android:gravity="center"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_above="@+id/password"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:textSize="16dp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Password"
+            android:gravity="center"
+            android:id="@+id/password"
+            android:layout_above="@+id/signIn_bt"
+            android:layout_alignParentStart="false"
+            android:textSize="16dp"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MacGo"
+            android:id="@+id/mac_go"
+            android:textSize="64dp"
+            android:typeface="normal"
+            android:layout_marginBottom="55dp"
+            android:layout_above="@+id/user_name"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
