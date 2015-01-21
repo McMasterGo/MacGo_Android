@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.MacGo"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--<uses-sdk android:minSdkVersion="21"
+              android:targetSdkVersion="19"/>-->
+    <application
+            android:label="@string/app_name"
+            android:name="com.example.MacGo.MacGoApplication"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/AppTheme" >
+        <activity
+                android:name=".MyActivity"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".PrePurchaseActivity"/>
+        <activity android:name=".PurchaseToken" android:theme="@android:style/Theme.Material.Panel"/>
+        <activity android:name=".PurchaseHistory" android:theme="@style/mytransparent.windowTitle"/>
+        <activity android:name=".ItemHistory" android:theme="@style/mytransparent.windowTitle"/>
+
+        <!--
+        <activity android:name=".LoginActivity" android:theme="@android:style/Theme.Material.Dialog.NoActionBar"/>
+        <activity android:name=".PrePurchaseActivity" android:theme="@android:style/Theme.Material.NoActionBar"/>
+        <activity android:name=".Purchase" android:theme="@android:style/Theme.Material.Light.Panel"/>-->
+
+
+
+    </application>
+</manifest>
