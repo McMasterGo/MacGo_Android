@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- your theme inherits from the material theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@color/darkgreen</item>
+        <item name="font">HelveticaLight</item>
+        <item name="colorPrimaryDark">@color/darkgreen</item>
+    </style>
+
+    <style name="mytransparent.windowTitle"  parent="android:style/Theme.Translucent">
+        <item name="colorPrimary">@color/darkSkin</item>
+        <item name="colorPrimaryDark">@color/darkSkin</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="android:background">@color/lightGreen</item>
+    </style>
+</resources>
