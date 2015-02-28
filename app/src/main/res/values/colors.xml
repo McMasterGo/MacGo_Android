@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="rippelColor">#FFFFFF</color>
     <color name="colorHighlight">#B6B6B6</color>
     <color name ="darkSkin">#d0c17d</color>
-    <color name ="lightGreen">#80ffffff</color>
+    <color name ="lightGreen">#500c1a1b</color>
     <item name="darkgreen" type="color">#0c1a1b</item>
     <item name="skin" type="color">#d0c17d</item>
     <item name="black" type="color">#000000</item>

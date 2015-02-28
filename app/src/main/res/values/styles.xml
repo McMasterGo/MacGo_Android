@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- your theme inherits from the material theme -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-    </style>
+    <!--&lt;!&ndash; your theme inherits from the material theme &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.NoActionBar">-->
+        <!--<item name="android:background">@color/darkgreen</item>-->
+        <!--<item name="font">HelveticaLight</item>-->
+        <!--<item name="android:colorPrimaryDark">@color/darkgreen</item>-->
+        <!--<item name="android:navigationBarColor">@color/darkgreen</item>-->
+        <!--<item name="android:textViewStyle">@style/MyTextViewStyle</item>-->
+    <!--</style>-->
+
+    <!--<style name="mytransparent.windowTitle"  parent="ThemeOverlay.AppCompat.Dark.ActionBar">-->
+        <!--<item name="android:colorPrimary">@color/darkSkin</item>-->
+        <!--<item name="android:navigationBarColor">@color/darkgreen</item>-->
+        <!--<item name="android:colorPrimaryDark">@color/darkSkin</item>-->
+    <!--</style>-->
 </resources>

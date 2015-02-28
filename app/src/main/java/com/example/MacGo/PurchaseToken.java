@@ -1,13 +1,18 @@
 package com.example.MacGo;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.*;
 import android.os.Bundle;
 
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.util.Log;
 import java.sql.Date;
 
+import com.drivemode.android.typeface.TypefaceHelper;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
@@ -25,27 +30,40 @@ public class PurchaseToken extends Activity{
     private Bitmap qrCode;
     private static final String TAG = "MacGo-Debug";
     private String tokenId = null;
+    private Button cancelButton;
+    private View pastActivity;
+    private Button refreshButton;
     Calendar expiryDate;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.purchase_activity);
-        final ParseObject token = new ParseObject("Tokens");
 
+        TypefaceHelper.getInstance().setTypeface(this, "fonts/Helvetica-Light.otf");
+        final ParseObject token = new ParseObject("Tokens");
+        cancelButton = (Button) findViewById(R.id.btn_cancel);
         populateToken(token);
 
-        Calendar currentTime = Calendar.getInstance();
-        //Log.i("Expiry Date is : ",expiryDate.getTime().toString());
-
+        LayoutInflater li = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        pastActivity = li.inflate(R.layout.pre_purchase_activity,null);
+        refreshButton = (Button) pastActivity.findViewById(R.id.btn_refresh);
+        refreshButton.setVisibility(View.INVISIBLE);
         new Timer().schedule(new TimerTask(){
             public void run() {
-                //startActivity(new Intent(Purchase.this, PrePurchaseActivity.class));
                 finish();
             }
         }, 5000);
-        //String img = ParseUser.getCurrentUser().get("objectId").toString().concat("qrCode");
 
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+
+                //Add token destruction functionality as well
+            }
+        });
     }
+
     /**
      * Writes the given Matrix on a new Bitmap object.
      * @param matrix the matrix to write.
@@ -62,7 +80,6 @@ public class PurchaseToken extends Activity{
                 //bmp.setPixel(x, y, matrix.get(x,y) ? Color.BLACK : Color.WHITE);
             }
         }
-
         bmp.setPixels(pixels, 0, width, 0, 0, width, height);
         return bmp;
     }

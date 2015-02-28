@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.drivemode.android.typeface.TypefaceHelper;
+
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 /**
@@ -23,22 +26,24 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_row, parent,false);
         MyViewHolder holder = new MyViewHolder(view);
-
         return holder;
     }
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         TextView itemName = (TextView) holder.view.findViewById(R.id.item_desc);
-        TextView itemCost = (TextView) holder.view.findViewById(R.id.item_cost);
+        TextView itemQuantity = (TextView) holder.view.findViewById(R.id.item_quantity);
 
+        TypefaceHelper.getInstance().setTypeface(itemName, "fonts/Helvetica-Light.otf");
+        TypefaceHelper.getInstance().setTypeface(itemQuantity, "fonts/Helvetica-Light.otf");
+
+        DecimalFormat df = new DecimalFormat("0.00");
         itemName.setText(items.get(position).getItemName());
-        itemCost.setText("$"+ Float.toString(items.get(position).getItemPrice()));
+        itemQuantity.setText(items.get(position).getPurchaseItemQuantity().toString());
         if(position %2 ==0) {
             itemName.setTextColor(Color.parseColor("#d0c17d"));
-            itemCost.setTextColor(Color.parseColor("#d0c17d"));
+            itemQuantity.setTextColor(Color.parseColor("#d0c17d"));
         }
-
     }
 
     @Override
@@ -52,5 +57,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
             super(itemView);
             view = itemView;
         }
+    }
+    public void clearItems(){
+        this.items.clear();
     }
 }

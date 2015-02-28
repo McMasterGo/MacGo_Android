@@ -4,6 +4,12 @@
     <string name="parse_app_id">nTERmyCRrA1y3B8LhGQiXP38lx8wu2Mrdtpppwhr</string>
     <string name="parse_client_id">0F15Y4JqxGMPeRfDfsjFML26Yu3I5oNkA6KDzcME</string>
     <string name="action_settings">Settings</string>
+    <string name="action_previous">Previous</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_next">Next</string>
+    <integer name="ripple_duration">300</integer>
+    <integer name="actionBarDefaultTextSize">30</integer>
+    <integer name="actionBarMinTextSize">25</integer>
 
     <!-- CircularImageView for custom shape -->
     <declare-styleable name="CircularImageView">

@@ -11,5 +11,5 @@
 
         android:text="History"
         android:textColor="#ffffff"
-        android:textSize="10.11pt" />
+        android:textSize="25sp" />
 </LinearLayout>

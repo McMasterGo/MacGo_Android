@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
     android:layout_height="?android:attr/actionBarSize"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:elevation="20dp"
+    android:background="@color/darkSkin">
+    <android.support.v7.widget.Toolbar
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <com.example.MacGo.RippleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        ripple:rv_type="simpleRipple"
+        ripple:rv_rippleDuration="200">
+    <ImageButton
+    android:layout_width="@dimen/abc_action_button_min_width_material"
+    android:layout_height="@dimen/abc_action_bar_default_height_material"
+    android:src="@drawable/ic_ab_up"
     android:background="@color/darkSkin"
-    >
+    android:selectAllOnFocus="false"
+    android:shadowRadius="0"
+    android:stateListAnimator="@anim/button_raise"
+    android:id="@+id/item_close"
+    />
+    </com.example.MacGo.RippleView>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
         android:background="@color/darkSkin"
+        android:layout_gravity="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:paddingRight="45dp"
         android:id="@+id/item_purchaseDesc"
         android:layout_above="@+id/item_purchaseDate"
         android:hint="LaPizza"
-        android:textColor="#ffffff"
-        android:textSize="10.33pt" />
+
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/actionBarTextSize" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,10 +52,11 @@
         android:id="@+id/item_purchaseDate"
         android:background="@color/darkSkin"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:paddingRight="45dp"
+        android:text="text"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:hint="January 0, 2015"
         android:textColor="#ffffff"
         android:textSize="6.3pt" />
+
+
 </RelativeLayout>

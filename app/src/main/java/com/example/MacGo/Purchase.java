@@ -17,22 +17,13 @@ import java.util.TimeZone;
 public class Purchase {
     ParseObject purchaseId;
     String purchaseDescription;
-    float purchaseCost;
+    Number purchaseCost;
     Date purchaseDate;
-    //ArrayList<ParseObject> itemIdList;
-
-
-
-    public final ParseObject getPurchaseId() {
-
-        return this.purchaseId;
-    }
-
     public final String getPurchaseDescription() {
         return purchaseDescription;
     }
 
-    public final float getPurchaseCost() {
+    public Number getPurchaseCost() {
         return purchaseCost;
     }
 
@@ -47,17 +38,8 @@ public class Purchase {
         return purchaseDate;
     }
 
-    /*public final ArrayList<ParseObject> getItemIdList() {
-        return itemIdList;
-    }*/
-
-    //public void setItemIdList(ArrayList<String> itemId) {
-    //    itemIdList = itemId;
-    //}
-
     public Purchase(ParseObject purchaseId, String purchaseDescription,
-                    float purchaseCost, Date purchaseDate) {
-        //itemIdList = new ArrayList<>();
+                    Number purchaseCost, Date purchaseDate) {
 
         this.purchaseId = purchaseId;
         this.purchaseDescription = purchaseDescription;

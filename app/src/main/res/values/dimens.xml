@@ -2,7 +2,18 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_press_elevation">4dp</dimen>
+    <dimen name="actionBarTextSize">20sp</dimen>
     <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="rowHeight">60dp</dimen>
+    <dimen name="minHeight">8dp</dimen>
+    <dimen name="primaryTextSize">24sp</dimen>
+    <dimen name="secondaryTextSize">20sp</dimen>
+    <dimen name="textMarginStart">16dp</dimen>
+    <dimen name="testPaddingLeft">16dp</dimen>
+    <dimen name="textPaddingTopBottom">10dp</dimen>
     <dimen name="card_corner_radius">4dp</dimen>
     <dimen name="card_layout_margin">2dp</dimen>
     <dimen name="low_padding">0.118in</dimen>

@@ -14,19 +14,24 @@ import java.util.Locale;
 public class Item {
     String itemId;
     String itemName;
-    float itemPrice;
+    Number itemPrice;
     int calories;
+    Number itemQuantity;
     private static ParseObject category;
 
     public final String getItemId() {
         return itemId;
     }
 
+    public Number getPurchaseItemQuantity() {
+        return itemQuantity;
+    }
+
     public final String getItemName() {
         return itemName;
     }
 
-    public final float getItemPrice() {
+    public final Number getItemPrice() {
         return itemPrice;
     }
 
@@ -45,12 +50,13 @@ public class Item {
         return formatDate;
     }
 
-    public Item(String itemId, String itemName, float itemPrice,
-                int calories, ParseObject category) {
+    public Item(String itemId, String itemName, Number itemPrice,
+                int calories, Number itemQuantity,ParseObject category) {
 
         this.itemId = itemId;
         this.itemName = itemName;
         this.itemPrice = itemPrice;
+        this.itemQuantity = itemQuantity;
         this.calories = calories;
         this.category = category;
     }
