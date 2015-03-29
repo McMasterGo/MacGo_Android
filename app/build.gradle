@@ -15,7 +15,7 @@ android {
     defaultConfig {
         applicationId "com.example.MacGo"
         minSdkVersion 19
-        targetSdkVersion 20
+        targetSdkVersion 21
     }
 
     buildTypes {

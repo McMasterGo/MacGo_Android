@@ -22,11 +22,10 @@
         android:descendantFocusability="beforeDescendants"
         android:focusableInTouchMode="true">
 
-    <com.example.MacGo.FontTextView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        app:font ="HelveticaNeueLTStd"
         android:text="MacGo"
         android:textColor="@color/skin"
         android:id="@+id/mac_go"

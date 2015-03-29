@@ -22,12 +22,25 @@
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="mytransparent.windowTitle"  parent="android:Theme.Material">
-        <item name="android:colorPrimary">@color/darkSkin</item>
+    <style name="mytransparent.windowTitle"   parent="android:style/Theme.Translucent">
+
+        <item name="colorPrimary">@color/darkSkin</item>
+        <item name="colorPrimaryDark">@color/darkSkin</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="android:background">@color/lightGreen</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@color/darkgreen</item>
-        <item name="android:colorPrimaryDark">@color/darkSkin</item>
 
     </style>
+
+    <!--<style name="MainActionBar" parent="android:Widget.Material.ActionBar">-->
+        <!--<item name="colorPrimary">@color/darkSkin</item>-->
+        <!--<item name="colorPrimaryDark">@color/darkSkin</item>-->
+        <!--<item name="android:background">?android:colorPrimaryDark</item>-->
+        <!--<item name="android:displayOptions">showTitle|homeAsUp</item>-->
+        <!--<item name="android:homeAsUpIndicator">@drawable/ic_ab_up</item>-->
+    <!--</style>-->
 
     <!-- ActionBar styles -->
 

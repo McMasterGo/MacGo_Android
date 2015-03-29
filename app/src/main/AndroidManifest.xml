@@ -23,9 +23,10 @@
         </activity>
         <activity android:name=".LoginActivity"/>
         <activity android:name=".PrePurchaseActivity"/>
-        <activity android:name=".PurchaseToken" android:theme="@android:style/Theme.Material.Panel"/>
-        <activity android:name=".PurchaseHistory" android:theme="@style/mytransparent.windowTitle"/>
-        <activity android:name=".ItemHistory" android:theme="@style/mytransparent.windowTitle"/>
+        <activity android:name=".PurchaseToken" android:theme="@android:style/Theme.Panel"/>
+        <activity android:name=".PurchaseItemHistory" android:theme="@style/mytransparent.windowTitle"/>
+        <!--<activity android:name=".PurchaseHistory" android:theme="@style/mytransparent.windowTitle"/>-->
+        <!--<activity android:name=".ItemHistory" android:theme="@style/mytransparent.windowTitle"/>-->
 
         <!--
         <activity android:name=".LoginActivity" android:theme="@android:style/Theme.Material.Dialog.NoActionBar"/>
