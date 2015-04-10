@@ -86,61 +86,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MacGoApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/MacGoApplication.java">
+      <file leaf-file-name="AccountSettings.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/AccountSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.71794873" vertical-offset="285" max-vertical-offset="885">
+              <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PurchaseToken.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PurchaseToken.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30598292" vertical-offset="511" max-vertical-offset="1995">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-              <folding>
-                <element signature="e#1841#2021#0" expanded="true" />
-                <element signature="e#2010#2011#0" expanded="true" />
-                <element signature="e#2224#2493#0" expanded="true" />
-                <element signature="e#2482#2483#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-21/android/widget/TextView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="123601" max-vertical-offset="137130">
-              <caret line="8556" column="0" selection-start-line="8556" selection-start-column="0" selection-end-line="8556" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="870">
-              <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
-              <folding>
-                <element signature="e#408#426#0" expanded="true" />
-                <element signature="e#732#750#0" expanded="true" />
+                <element signature="e#1355#1673#0" expanded="true" />
+                <element signature="e#1662#1663#0" expanded="true" />
+                <element signature="method#updateActionBar#0;class#AccountSettings#0" expanded="false" />
+                <element signature="e#1984#2133#0" expanded="true" />
+                <element signature="e#2122#2123#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,13 +106,28 @@
       <file leaf-file-name="PrePurchaseActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PrePurchaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="481" max-vertical-offset="1305">
-              <caret line="235" column="40" selection-start-line="235" selection-start-column="40" selection-end-line="235" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="2685">
+              <caret line="41" column="32" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#onCreate#0;class#PrePurchaseActivity#0" expanded="false" />
+                <element signature="method#refreshAccountBalance#0;class#PrePurchaseActivity#0" expanded="false" />
+                <element signature="method#onResume#0;class#PrePurchaseActivity#0" expanded="false" />
+                <element signature="method#onKeyDown#0;class#PrePurchaseActivity#0" expanded="false" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account_settings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/account_settings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+              <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -1796,8 +1768,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/FastBlurHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/Blur.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/RecyclerViewTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/RecyclerAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/recyclerview.xml" />
@@ -1838,15 +1808,17 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/circle.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/pre_purchase_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PurchaseToken.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PrePurchaseActivity.java" />
         <option value="$PROJECT_DIR$/local.properties" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/app/passcode/build.gradle" />
         <option value="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/MacGoApplication.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/pre_purchase_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PrePurchaseActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/account_settings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/AccountSettings.java" />
       </list>
     </option>
   </component>
@@ -1903,6 +1875,56 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MacGo" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MacGo" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MacGo" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2167,7 +2189,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2182,7 +2204,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32261115" sideWeight="0.6767838" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858595" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42005676" sideWeight="0.6033014" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42005676" sideWeight="0.6033014" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42005676" sideWeight="0.39669862" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18530351" sideWeight="0.7226754" order="0" side_tool="false" content_ui="combo" />
@@ -2279,18 +2301,6 @@
           <line>52</line>
           <properties />
           <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PurchaseToken.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PurchaseToken.java</url>
-          <line>71</line>
-          <properties />
-          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="69" />
@@ -2447,17 +2457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_actionbar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1005">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v19/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="511">
@@ -2525,14 +2524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20512821" vertical-offset="0" max-vertical-offset="585">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/category_circle.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30769232" vertical-offset="0" max-vertical-offset="585">
@@ -2556,14 +2547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61876833" vertical-offset="298" max-vertical-offset="1560">
           <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PurchaseItemHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2210">
-          <caret line="50" column="36" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -2612,36 +2595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pre_purchase_activity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7258065" vertical-offset="0" max-vertical-offset="558">
-          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-          <folding>
-            <element signature="tag#ImageButton#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="tag#TextView#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="tag#RelativeLayout#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="e#1495#1519#0" expanded="true" />
-            <element signature="e#1557#1580#0" expanded="true" />
-            <element signature="tag#RelativeLayout#1;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="e#2619#2643#0" expanded="true" />
-            <element signature="e#2681#2704#0" expanded="true" />
-            <element signature="tag#com.example.MacGo.RippleView#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="tag#RelativeLayout#2;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="e#4965#4989#0" expanded="true" />
-            <element signature="e#5082#5105#0" expanded="true" />
-            <element signature="tag#com.example.MacGo.RippleView#1;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="tag#RelativeLayout#3;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="e#6984#7007#0" expanded="true" />
-            <element signature="e#7045#7069#0" expanded="true" />
-            <element signature="tag#com.example.MacGo.RippleView#2;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="e#8018#8038#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../PasscodeLock-Android-develop/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
@@ -2650,37 +2603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PrePurchaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="481" max-vertical-offset="1305">
-          <caret line="235" column="40" selection-start-line="235" selection-start-column="40" selection-end-line="235" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#PrePurchaseActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21961933" vertical-offset="0" max-vertical-offset="683">
           <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2701,44 +2627,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="870">
-          <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.025641026" vertical-offset="0" max-vertical-offset="585">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-21/android/widget/TextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30598292" vertical-offset="123601" max-vertical-offset="137130">
+          <caret line="8556" column="0" selection-start-line="8556" selection-start-column="0" selection-end-line="8556" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pre_purchase_activity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75268817" vertical-offset="0" max-vertical-offset="780">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
           <folding>
-            <element signature="e#408#426#0" expanded="true" />
-            <element signature="e#732#750#0" expanded="true" />
+            <element signature="tag#RelativeLayout#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
+            <element signature="e#1640#1664#0" expanded="true" />
+            <element signature="e#1702#1725#0" expanded="true" />
+            <element signature="tag#RelativeLayout#1;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
+            <element signature="e#2764#2788#0" expanded="true" />
+            <element signature="e#2826#2849#0" expanded="true" />
+            <element signature="tag#com.example.MacGo.RippleView#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
+            <element signature="tag#RelativeLayout#2;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
+            <element signature="e#5110#5134#0" expanded="true" />
+            <element signature="e#5227#5250#0" expanded="true" />
+            <element signature="tag#com.example.MacGo.RippleView#1;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
+            <element signature="tag#RelativeLayout#3;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
+            <element signature="e#7129#7152#0" expanded="true" />
+            <element signature="e#7190#7214#0" expanded="true" />
+            <element signature="tag#com.example.MacGo.RippleView#2;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
+            <element signature="e#8163#8183#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/MacGoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.12820514" vertical-offset="0" max-vertical-offset="585">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-21/android/widget/TextView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PurchaseItemHistory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="123601" max-vertical-offset="137130">
-          <caret line="8556" column="0" selection-start-line="8556" selection-start-column="0" selection-end-line="8556" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.36410257" vertical-offset="207" max-vertical-offset="1815">
+          <caret line="52" column="74" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="74" />
+          <folding>
+            <element signature="e#1919#2067#0" expanded="true" />
+            <element signature="e#2056#2057#0" expanded="true" />
+            <element signature="method#updateActionBar#0;class#PurchaseItemHistory#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PurchaseToken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30598292" vertical-offset="511" max-vertical-offset="1995">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8974359" vertical-offset="0" max-vertical-offset="900">
+          <caret line="63" column="5" selection-start-line="37" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
           <folding>
-            <element signature="e#1841#2021#0" expanded="true" />
-            <element signature="e#2010#2011#0" expanded="true" />
-            <element signature="e#2224#2493#0" expanded="true" />
-            <element signature="e#2482#2483#0" expanded="true" />
+            <element signature="method#updateToken#0;class#PurchaseToken#0" expanded="false" />
+            <element signature="method#toBitmap#0;class#PurchaseToken#0" expanded="false" />
+            <element signature="method#createQRCode#0;class#PurchaseToken#0" expanded="false" />
+            <element signature="method#populateToken#0;class#PurchaseToken#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71794873" vertical-offset="0" max-vertical-offset="585">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12820514" vertical-offset="0" max-vertical-offset="585">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_actionbar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24731183" vertical-offset="447" max-vertical-offset="1005">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PrePurchaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="2685">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#refreshAccountBalance#0;class#PrePurchaseActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#PrePurchaseActivity#0" expanded="false" />
+            <element signature="method#onKeyDown#0;class#PrePurchaseActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/account_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/AccountSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71794873" vertical-offset="285" max-vertical-offset="885">
+          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1355#1673#0" expanded="true" />
+            <element signature="e#1662#1663#0" expanded="true" />
+            <element signature="method#updateActionBar#0;class#AccountSettings#0" expanded="false" />
+            <element signature="e#1984#2133#0" expanded="true" />
+            <element signature="e#2122#2123#0" expanded="true" />
           </folding>
         </state>
       </provider>

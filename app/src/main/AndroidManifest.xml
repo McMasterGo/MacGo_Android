@@ -26,7 +26,7 @@
         <activity android:name=".PrePurchaseActivity"/>
         <activity android:name=".PurchaseToken" android:theme="@android:style/Theme.Panel"/>
         <activity android:name=".PurchaseItemHistory" android:theme="@style/mytransparent.windowTitle"/>
-
+        <activity android:name=".AccountSettings" android:theme="@style/mytransparent.windowTitle"/>
 
     </application>
 </manifest>

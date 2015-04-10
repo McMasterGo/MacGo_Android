@@ -46,8 +46,7 @@ public class PrePurchaseActivity extends Activity {
         findViewById(R.id.action_settings).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Testing for Crash
-                throw new RuntimeException("Test Exception!");
+                openSettings();
             }
         });
 
@@ -136,11 +135,7 @@ public class PrePurchaseActivity extends Activity {
                    @Override
                    public void run() {
                        if (isNetworkAvailable()) {
-                           ParseUser.getCurrentUser().logOut();
-                           Intent intent = new Intent(PrePurchaseActivity.this, MyActivity.class);
-                           intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                           startActivity(intent);
-                           finish();
+                           openSettings();
                        } else {
                            Toast.makeText(PrePurchaseActivity.this, "Network Unavailable", Toast.LENGTH_SHORT).show();
                        }
@@ -250,5 +245,10 @@ public class PrePurchaseActivity extends Activity {
             finish();
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    public void openSettings(){
+        Intent intent = new Intent(PrePurchaseActivity.this, AccountSettings.class);
+        startActivity(intent);
     }
 }
