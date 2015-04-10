@@ -17,6 +17,7 @@
         android:layout_height="72dp"
         android:background="@android:color/transparent"
         android:src="@drawable/settings"
+        android:id="@+id/action_settings"
         android:layout_alignParentEnd="true"
         />
     <TextView

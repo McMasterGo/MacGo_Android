@@ -76,30 +76,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PrePurchaseActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6666667" vertical-offset="30" max-vertical-offset="615">
+              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrePurchaseActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PrePurchaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5623932" vertical-offset="46" max-vertical-offset="7155">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="3105">
+              <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2791#3094#0" expanded="true" />
-                <element signature="e#3076#3077#0" expanded="true" />
-                <element signature="e#3605#3906#0" expanded="true" />
-                <element signature="e#3888#3889#0" expanded="true" />
-                <element signature="e#4417#4718#0" expanded="true" />
-                <element signature="e#4700#4701#0" expanded="true" />
-                <element signature="e#5252#6189#0" expanded="true" />
-                <element signature="e#6109#6161#0" expanded="true" />
-                <element signature="e#6179#6180#0" expanded="true" />
-                <element signature="e#6234#6619#0" expanded="true" />
-                <element signature="e#6608#6609#0" expanded="true" />
-                <element signature="e#6665#7595#0" expanded="true" />
-                <element signature="e#7512#7564#0" expanded="true" />
-                <element signature="e#7584#7585#0" expanded="true" />
-                <element signature="e#7657#8520#0" expanded="true" />
-                <element signature="e#8437#8489#0" expanded="true" />
-                <element signature="e#8509#8510#0" expanded="true" />
+                <element signature="e#1550#1765#0" expanded="true" />
+                <element signature="e#1754#1755#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,33 +103,37 @@
       <file leaf-file-name="pre_purchase_activity.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pre_purchase_activity.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-41.11111" vertical-offset="0" max-vertical-offset="1695">
-              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.111111" vertical-offset="0" max-vertical-offset="1710">
+              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
               <folding>
-                <element signature="e#1357#1381#0" expanded="true" />
-                <element signature="e#1415#1438#0" expanded="true" />
-                <element signature="e#2381#2405#0" expanded="true" />
-                <element signature="e#2439#2462#0" expanded="true" />
                 <element signature="tag#TextView#0;tag#RelativeLayout#1;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
                 <element signature="tag#com.example.MacGo.RippleView#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
                 <element signature="tag#TextView#0;tag#com.example.MacGo.RippleView#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
                 <element signature="tag#Button#0;tag#com.example.MacGo.RippleView#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
                 <element signature="tag#RelativeLayout#2;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-                <element signature="e#4515#4539#0" expanded="true" />
-                <element signature="e#4624#4647#0" expanded="true" />
                 <element signature="tag#TextView#0;tag#RelativeLayout#2;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
                 <element signature="tag#com.example.MacGo.RippleView#1;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
                 <element signature="tag#Button#0;tag#com.example.MacGo.RippleView#1;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-                <element signature="e#6354#6377#0" expanded="true" />
-                <element signature="e#6411#6435#0" expanded="true" />
                 <element signature="tag#TextView#0;tag#RelativeLayout#3;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-                <element signature="e#7296#7316#0" expanded="true" />
                 <element signature="tag#Button#0;tag#com.example.MacGo.RippleView#2;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
               </folding>
             </state>
           </provider>
           <provider editor-type-id="android-designer">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MacGoApplication.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/MacGoApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#370#402#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -1016,7 +1015,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4279104492000" />
+        <entry key="$PROJECT_DIR$" value="4280148161000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1177,9 +1176,10 @@
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/22.0.0/support-v4-22.0.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar" />
                             <option value="$MODULE_DIR$/libs/android-integration-3.1.0.jar" />
-                            <option value="$MODULE_DIR$/libs/bolts-android-1.1.3.jar" />
+                            <option value="$MODULE_DIR$/libs/bolts-android-1.2.0.jar" />
                             <option value="$MODULE_DIR$/libs/core-3.1.0.jar" />
-                            <option value="$MODULE_DIR$/libs/Parse-1.7.1.jar" />
+                            <option value="$MODULE_DIR$/libs/Parse-1.9.1.jar" />
+                            <option value="$MODULE_DIR$/libs/ParseCrashReporting-1.9.1.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/app" />
@@ -1274,7 +1274,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/FontTextView.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/MacGoApplication.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/DefaultItemAnimator.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/Util.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PurchaseAnalysis.java" />
@@ -1300,14 +1299,15 @@
         <option value="$PROJECT_DIR$/../../Moments/moments/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/category_circle.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/MyActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/circle.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/MacGoApplication.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/pre_purchase_activity.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PrePurchaseActivity.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
       </list>
     </option>
   </component>
@@ -1376,74 +1376,6 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MacGo" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MacGo" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MacGo" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MacGo" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
@@ -1464,20 +1396,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="MacGo" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MacGo" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1700,7 +1618,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756868" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32734153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18530351" sideWeight="0.27732465" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1780,12 +1698,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PrePurchaseActivity.java</url>
-          <line>173</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PurchaseAdapter.java</url>
           <line>50</line>
           <properties />
@@ -1793,7 +1705,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PrePurchaseActivity.java</url>
-          <line>139</line>
+          <line>147</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
@@ -1822,7 +1734,7 @@
           <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="62" />
+      <option name="time" value="65" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1946,16 +1858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4359673" vertical-offset="0" max-vertical-offset="918">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2089,14 +1991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48387095" vertical-offset="135" max-vertical-offset="1410">
@@ -2191,24 +2085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/MacGoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15395895" vertical-offset="0" max-vertical-offset="682">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/MyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35897437" vertical-offset="0" max-vertical-offset="585">
@@ -2246,29 +2122,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2820513" vertical-offset="0" max-vertical-offset="585">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23076923" vertical-offset="165" max-vertical-offset="870">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pre_purchase_activity.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-41.11111" vertical-offset="0" max-vertical-offset="1695">
-          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state vertical-scroll-proportion="-11.111111" vertical-offset="0" max-vertical-offset="1710">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
           <folding>
-            <element signature="e#1357#1381#0" expanded="true" />
-            <element signature="e#1415#1438#0" expanded="true" />
-            <element signature="e#2381#2405#0" expanded="true" />
-            <element signature="e#2439#2462#0" expanded="true" />
             <element signature="tag#TextView#0;tag#RelativeLayout#1;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
             <element signature="tag#com.example.MacGo.RippleView#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
             <element signature="tag#TextView#0;tag#com.example.MacGo.RippleView#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
             <element signature="tag#Button#0;tag#com.example.MacGo.RippleView#0;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
             <element signature="tag#RelativeLayout#2;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="e#4515#4539#0" expanded="true" />
-            <element signature="e#4624#4647#0" expanded="true" />
             <element signature="tag#TextView#0;tag#RelativeLayout#2;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
             <element signature="tag#com.example.MacGo.RippleView#1;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
             <element signature="tag#Button#0;tag#com.example.MacGo.RippleView#1;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="e#6354#6377#0" expanded="true" />
-            <element signature="e#6411#6435#0" expanded="true" />
             <element signature="tag#TextView#0;tag#RelativeLayout#3;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
-            <element signature="e#7296#7316#0" expanded="true" />
             <element signature="tag#Button#0;tag#com.example.MacGo.RippleView#2;tag#RelativeLayout#0;tag#FrameLayout#0" expanded="false" />
           </folding>
         </state>
@@ -2277,30 +2162,34 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PrePurchaseActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/MacGoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5623932" vertical-offset="46" max-vertical-offset="7155">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2791#3094#0" expanded="true" />
-            <element signature="e#3076#3077#0" expanded="true" />
-            <element signature="e#3605#3906#0" expanded="true" />
-            <element signature="e#3888#3889#0" expanded="true" />
-            <element signature="e#4417#4718#0" expanded="true" />
-            <element signature="e#4700#4701#0" expanded="true" />
-            <element signature="e#5252#6189#0" expanded="true" />
-            <element signature="e#6109#6161#0" expanded="true" />
-            <element signature="e#6179#6180#0" expanded="true" />
-            <element signature="e#6234#6619#0" expanded="true" />
-            <element signature="e#6608#6609#0" expanded="true" />
-            <element signature="e#6665#7595#0" expanded="true" />
-            <element signature="e#7512#7564#0" expanded="true" />
-            <element signature="e#7584#7585#0" expanded="true" />
-            <element signature="e#7657#8520#0" expanded="true" />
-            <element signature="e#8437#8489#0" expanded="true" />
-            <element signature="e#8509#8510#0" expanded="true" />
+            <element signature="e#370#402#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/MacGo/PrePurchaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="3105">
+          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1550#1765#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6666667" vertical-offset="30" max-vertical-offset="615">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

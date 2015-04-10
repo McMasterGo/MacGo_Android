@@ -1,7 +1,7 @@
 package com.example.MacGo;
 
 import com.drivemode.android.typeface.TypefaceHelper;
-import com.parse.Parse;
+import com.parse.*;
 import android.app.Application;
 
 /**
@@ -10,7 +10,7 @@ import android.app.Application;
 public class MacGoApplication extends Application {
     public void onCreate() {
         TypefaceHelper.initialize(this);
-
+        ParseCrashReporting.enable(this);
         Parse.initialize(this, getString(R.string.parse_app_id), getString(R.string.parse_client_id));
     }
 
