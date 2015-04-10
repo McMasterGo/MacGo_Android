@@ -69,18 +69,12 @@ ADDED from AndroidManifest.xml:26:9
 		ADDED from AndroidManifest.xml:26:49
 	android:name
 		ADDED from AndroidManifest.xml:26:19
-activity#com.example.MacGo.PurchaseHistory
+activity#com.example.MacGo.PurchaseItemHistory
 ADDED from AndroidManifest.xml:27:9
 	android:theme
-		ADDED from AndroidManifest.xml:27:51
+		ADDED from AndroidManifest.xml:27:55
 	android:name
 		ADDED from AndroidManifest.xml:27:19
-activity#com.example.MacGo.ItemHistory
-ADDED from AndroidManifest.xml:28:9
-	android:theme
-		ADDED from AndroidManifest.xml:28:47
-	android:name
-		ADDED from AndroidManifest.xml:28:19
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.drivemode:TypefaceHelper:1.0.0:7:5

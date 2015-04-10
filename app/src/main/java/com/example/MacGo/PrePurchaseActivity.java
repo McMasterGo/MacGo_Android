@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Outline;
-import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -14,21 +12,16 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.ViewOutlineProvider;
 import android.view.WindowManager;
-import android.view.animation.Animation;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.drivemode.android.typeface.TypefaceHelper;
-import com.parse.FindCallback;
 import com.parse.GetCallback;
+
 import com.parse.ParseException;
 import com.parse.ParseObject;
-import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import java.text.DecimalFormat;
 
@@ -48,23 +41,79 @@ public class PrePurchaseActivity extends Activity {
         userBalance = (TextView)findViewById(R.id.txt_balance) ;
         refreshButton = (Button) findViewById(R.id.btn_refresh);
         purchaseButton = (RippleView) findViewById(R.id.btn_purchase);
+        purchaseButton.setBackgroundColor(Color.TRANSPARENT);
 
-       if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-           getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-       }
-       //Button fab = (Button) findViewById(R.id.fab);
-        //Outline outline = new Outline();
-        //outline.setOval(0, 0, size, size);
-        //fab.setOutline(outline);
-//       ViewOutlineProvider viewOutlineProvider = new ViewOutlineProvider() {
-//           @Override
-//           public void getOutline(View view, Outline outline) {
-//               // Or read size directly from the view's width/height
-//               int size = getResources().getDimensionPixelSize(R.dimen.fab_size);
-//               outline.setOval(0, 0, size, size);
-//           }
-//       };
-//       refreshButton.setOutlineProvider(viewOutlineProvider);
+        findViewById(R.id.junk_category).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                findViewById(R.id.junk_category).setVisibility(View.INVISIBLE);
+                TextView junkCategoryStat = (TextView)findViewById(R.id.junk_category_stat);
+                junkCategoryStat.setVisibility(View.VISIBLE);
+                junkCategoryStat.setText("20%");
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        findViewById(R.id.junk_category_stat).setVisibility(View.INVISIBLE);
+                        findViewById(R.id.junk_category).setVisibility(View.VISIBLE);
+                    }
+                }, 2000);
+            }
+        });
+
+       findViewById(R.id.drinks_category).setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               findViewById(R.id.drinks_category).setVisibility(View.INVISIBLE);
+               TextView drinksCategoryStat = (TextView)findViewById(R.id.drinks_category_stat);
+               drinksCategoryStat.setVisibility(View.VISIBLE);
+               drinksCategoryStat.setText("21%");
+               new Handler().postDelayed(new Runnable() {
+                   @Override
+                   public void run() {
+                       findViewById(R.id.drinks_category_stat).setVisibility(View.INVISIBLE);
+                       findViewById(R.id.drinks_category).setVisibility(View.VISIBLE);
+                   }
+               }, 2000);
+           }
+       });
+
+       findViewById(R.id.fruit_category).setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               findViewById(R.id.fruit_category).setVisibility(View.INVISIBLE);
+               TextView fruitCategoryStat = (TextView)findViewById(R.id.fruit_category_stat);
+               fruitCategoryStat.setVisibility(View.VISIBLE);
+               fruitCategoryStat.setText("22%");
+               new Handler().postDelayed(new Runnable() {
+                   @Override
+                   public void run() {
+                       findViewById(R.id.fruit_category_stat).setVisibility(View.INVISIBLE);
+                       findViewById(R.id.fruit_category).setVisibility(View.VISIBLE);
+                   }
+               }, 2000);
+           }
+       });
+
+       findViewById(R.id.candy_category).setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               findViewById(R.id.candy_category).setVisibility(View.INVISIBLE);
+               TextView candyCategoryStat = (TextView)findViewById(R.id.candy_category_stat);
+               candyCategoryStat.setVisibility(View.VISIBLE);
+               candyCategoryStat.setText("23%");
+               new Handler().postDelayed(new Runnable() {
+                   @Override
+                   public void run() {
+                       findViewById(R.id.candy_category_stat).setVisibility(View.INVISIBLE);
+                       findViewById(R.id.candy_category).setVisibility(View.VISIBLE);
+                   }
+               }, 2000);
+           }
+       });
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        }
 
         String userFullName = ParseUser.getCurrentUser().get("firstName").toString() + " " + ParseUser.getCurrentUser().get("lastName").toString();
         refreshAccountBalance(ParseUser.getCurrentUser());
