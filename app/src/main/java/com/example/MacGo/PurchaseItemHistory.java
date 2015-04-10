@@ -5,15 +5,12 @@ import android.animation.AnimatorListenerAdapter;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
@@ -23,8 +20,6 @@ import android.widget.Toast;
 
 import com.drivemode.android.typeface.TypefaceHelper;
 import com.parse.ParseObject;
-
-import java.util.ArrayList;
 
 /**
  * Created by KD on 1/30/2015.
@@ -47,8 +42,8 @@ public class PurchaseItemHistory extends Activity{
         }
         getActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         //getActionBar().setDisplayOptions(ActionBar.DISPLAY_HOME_AS_UP);
-        //getActionBar().setCustomView(R.layout.item_actionbar);
-        getActionBar().setCustomView(TypefaceHelper.getInstance().setTypeface(this,R.layout.item_actionbar, "fonts/Helvetica-Light.otf"));
+        //getActionBar().setCustomView(R.layout.main_actionbar);
+        getActionBar().setCustomView(TypefaceHelper.getInstance().setTypeface(this,R.layout.main_actionbar, "fonts/Helvetica-Light.otf"));
         //getActionBar().setLogo(R.drawable.ic_ab_up);
         ImageButton itemDate = (ImageButton)findViewById(R.id.item_close);
         itemDate.setOnClickListener(new View.OnClickListener(){

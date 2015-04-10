@@ -2,19 +2,15 @@ package com.example.MacGo;
 
 import android.app.ActionBar;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.drivemode.android.typeface.TypefaceHelper;
-import com.parse.ParseObject;
 import com.parse.ParseUser;
 
 
@@ -34,7 +30,7 @@ public class AccountSettings extends Activity {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         }
         getActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getActionBar().setCustomView(TypefaceHelper.getInstance().setTypeface(this,R.layout.item_actionbar, "fonts/Helvetica-Light.otf"));
+        getActionBar().setCustomView(TypefaceHelper.getInstance().setTypeface(this,R.layout.main_actionbar, "fonts/Helvetica-Light.otf"));
         updateActionBar();
 
         findViewById(R.id.action_logout).setOnClickListener(new View.OnClickListener() {
@@ -42,6 +38,7 @@ public class AccountSettings extends Activity {
             public void onClick(View v) {
                 ParseUser.getCurrentUser().logOut();
                 Intent intent = new Intent(AccountSettings.this, MyActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 finish();
             }

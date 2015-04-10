@@ -11,5 +11,6 @@
         android:textAllCaps="false"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:background="@color/skin"
+        android:textColor="@android:color/white"
         android:layout_height="@dimen/abc_action_bar_default_height_material" />
 </LinearLayout>
