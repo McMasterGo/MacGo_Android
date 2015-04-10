@@ -82,19 +82,6 @@ public class PurchaseHistory extends FrameLayout {
         );
 
         getData();
-
-//        ArrayList<StaticData> data = new ArrayList<StaticData>();
-//        for (int i = 0; i < 30; i++) {
-//            data.add(new StaticData(
-//                    "Title" + i,
-//                    "This is description" + i));
-//        }
-    }
-    private boolean isNetworkAvailable() {
-        ConnectivityManager connectivityManager
-                = (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
     public ParseObject getPurchaseId(int i) {

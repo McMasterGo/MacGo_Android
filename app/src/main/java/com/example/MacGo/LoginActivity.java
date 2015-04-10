@@ -98,9 +98,6 @@ public class LoginActivity extends Activity{
                             }
                         });
                     }
-                    else {
-                        Toast.makeText(LoginActivity.this, "No Network Connection Detected!", Toast.LENGTH_LONG).show();
-                    }
                 }
                 return false;
             }
@@ -124,6 +121,9 @@ public class LoginActivity extends Activity{
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        if ( !(activeNetworkInfo != null && activeNetworkInfo.isConnected()) ) {
+            Toast.makeText(LoginActivity.this, "Network Unavailable", Toast.LENGTH_SHORT).show();
+        }
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }

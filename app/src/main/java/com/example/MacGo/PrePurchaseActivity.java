@@ -53,68 +53,76 @@ public class PrePurchaseActivity extends Activity {
         findViewById(R.id.junk_category).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findViewById(R.id.junk_category).setVisibility(View.INVISIBLE);
-                TextView junkCategoryStat = (TextView)findViewById(R.id.junk_category_stat);
-                junkCategoryStat.setVisibility(View.VISIBLE);
-                junkCategoryStat.setText("20%");
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        findViewById(R.id.junk_category_stat).setVisibility(View.INVISIBLE);
-                        findViewById(R.id.junk_category).setVisibility(View.VISIBLE);
-                    }
-                }, 2000);
+                if (isNetworkAvailable()) {
+                    findViewById(R.id.junk_category).setVisibility(View.INVISIBLE);
+                    TextView junkCategoryStat = (TextView) findViewById(R.id.junk_category_stat);
+                    junkCategoryStat.setVisibility(View.VISIBLE);
+                    junkCategoryStat.setText("20%");
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            findViewById(R.id.junk_category_stat).setVisibility(View.INVISIBLE);
+                            findViewById(R.id.junk_category).setVisibility(View.VISIBLE);
+                        }
+                    }, 2000);
+                }
             }
         });
 
        findViewById(R.id.drinks_category).setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               findViewById(R.id.drinks_category).setVisibility(View.INVISIBLE);
-               TextView drinksCategoryStat = (TextView)findViewById(R.id.drinks_category_stat);
-               drinksCategoryStat.setVisibility(View.VISIBLE);
-               drinksCategoryStat.setText("21%");
-               new Handler().postDelayed(new Runnable() {
-                   @Override
-                   public void run() {
-                       findViewById(R.id.drinks_category_stat).setVisibility(View.INVISIBLE);
-                       findViewById(R.id.drinks_category).setVisibility(View.VISIBLE);
-                   }
-               }, 2000);
+               if (isNetworkAvailable()) {
+                   findViewById(R.id.drinks_category).setVisibility(View.INVISIBLE);
+                   TextView drinksCategoryStat = (TextView) findViewById(R.id.drinks_category_stat);
+                   drinksCategoryStat.setVisibility(View.VISIBLE);
+                   drinksCategoryStat.setText("21%");
+                   new Handler().postDelayed(new Runnable() {
+                       @Override
+                       public void run() {
+                           findViewById(R.id.drinks_category_stat).setVisibility(View.INVISIBLE);
+                           findViewById(R.id.drinks_category).setVisibility(View.VISIBLE);
+                       }
+                   }, 2000);
+               }
            }
        });
 
        findViewById(R.id.fruit_category).setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               findViewById(R.id.fruit_category).setVisibility(View.INVISIBLE);
-               TextView fruitCategoryStat = (TextView)findViewById(R.id.fruit_category_stat);
-               fruitCategoryStat.setVisibility(View.VISIBLE);
-               fruitCategoryStat.setText("22%");
-               new Handler().postDelayed(new Runnable() {
-                   @Override
-                   public void run() {
-                       findViewById(R.id.fruit_category_stat).setVisibility(View.INVISIBLE);
-                       findViewById(R.id.fruit_category).setVisibility(View.VISIBLE);
-                   }
-               }, 2000);
+               if (isNetworkAvailable()) {
+                   findViewById(R.id.fruit_category).setVisibility(View.INVISIBLE);
+                   TextView fruitCategoryStat = (TextView) findViewById(R.id.fruit_category_stat);
+                   fruitCategoryStat.setVisibility(View.VISIBLE);
+                   fruitCategoryStat.setText("22%");
+                   new Handler().postDelayed(new Runnable() {
+                       @Override
+                       public void run() {
+                           findViewById(R.id.fruit_category_stat).setVisibility(View.INVISIBLE);
+                           findViewById(R.id.fruit_category).setVisibility(View.VISIBLE);
+                       }
+                   }, 2000);
+               }
            }
        });
 
        findViewById(R.id.candy_category).setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               findViewById(R.id.candy_category).setVisibility(View.INVISIBLE);
-               TextView candyCategoryStat = (TextView)findViewById(R.id.candy_category_stat);
-               candyCategoryStat.setVisibility(View.VISIBLE);
-               candyCategoryStat.setText("23%");
-               new Handler().postDelayed(new Runnable() {
-                   @Override
-                   public void run() {
-                       findViewById(R.id.candy_category_stat).setVisibility(View.INVISIBLE);
-                       findViewById(R.id.candy_category).setVisibility(View.VISIBLE);
-                   }
-               }, 2000);
+               if (isNetworkAvailable()) {
+                   findViewById(R.id.candy_category).setVisibility(View.INVISIBLE);
+                   TextView candyCategoryStat = (TextView) findViewById(R.id.candy_category_stat);
+                   candyCategoryStat.setVisibility(View.VISIBLE);
+                   candyCategoryStat.setText("23%");
+                   new Handler().postDelayed(new Runnable() {
+                       @Override
+                       public void run() {
+                           findViewById(R.id.candy_category_stat).setVisibility(View.INVISIBLE);
+                           findViewById(R.id.candy_category).setVisibility(View.VISIBLE);
+                       }
+                   }, 2000);
+               }
            }
        });
 
@@ -136,8 +144,6 @@ public class PrePurchaseActivity extends Activity {
                    public void run() {
                        if (isNetworkAvailable()) {
                            openSettings();
-                       } else {
-                           Toast.makeText(PrePurchaseActivity.this, "Network Unavailable", Toast.LENGTH_SHORT).show();
                        }
                    }
                }, getResources().getInteger(R.integer.ripple_duration) * 2);
@@ -149,8 +155,6 @@ public class PrePurchaseActivity extends Activity {
             public void onClick(View v) {
                 if (isNetworkAvailable()) {
                     refreshAccountBalance(ParseUser.getCurrentUser());
-                } else {
-                    Toast.makeText(PrePurchaseActivity.this, "Network Unavailable", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -162,14 +166,12 @@ public class PrePurchaseActivity extends Activity {
                 handler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        if (isNetworkAvailable()) {
+                        if (isNetworkAvailable() && checkBalance()) {
                             refreshButton.setVisibility(View.INVISIBLE);
                             Intent intent = new Intent(PrePurchaseActivity.this, PurchaseToken.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                             startActivity(intent);
                             purchaseButton.setEnabled(false);
-                        } else {
-                            Toast.makeText(PrePurchaseActivity.this, "Network Unavailable", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }, getResources().getInteger(R.integer.ripple_duration)  * 2);
@@ -187,8 +189,6 @@ public class PrePurchaseActivity extends Activity {
                             Intent intent = new Intent(PrePurchaseActivity.this, PurchaseItemHistory.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                             startActivity(intent);
-                        } else {
-                            Toast.makeText(PrePurchaseActivity.this, "Network Unavailable", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }, getResources().getInteger(R.integer.ripple_duration)  * 2);
@@ -222,7 +222,19 @@ public class PrePurchaseActivity extends Activity {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        if ( !(activeNetworkInfo != null && activeNetworkInfo.isConnected()) ) {
+            Toast.makeText(PrePurchaseActivity.this, "Network Unavailable", Toast.LENGTH_SHORT).show();
+        }
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+    }
+
+    public boolean checkBalance(){
+        Float currBalance = ParseUser.getCurrentUser().getNumber("balance").floatValue();
+        if (currBalance > 0) {
+            return true;
+        }
+        Toast.makeText(PrePurchaseActivity.this, "Insufficient Balance", Toast.LENGTH_SHORT).show();
+        return false;
     }
 
     @Override
