@@ -172,6 +172,7 @@ public class PrePurchaseActivity extends Activity {
                             Intent intent = new Intent(PrePurchaseActivity.this, PurchaseToken.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                             startActivity(intent);
+                            purchaseButton.setEnabled(false);
                         } else {
                             Toast.makeText(PrePurchaseActivity.this, "Network Unavailable", Toast.LENGTH_SHORT).show();
                         }
@@ -232,6 +233,7 @@ public class PrePurchaseActivity extends Activity {
     @Override
     public void onResume(){
         super.onResume();
+        purchaseButton.setEnabled(true);
         refreshButton.setVisibility(View.VISIBLE);
     }
 

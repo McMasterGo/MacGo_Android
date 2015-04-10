@@ -58,8 +58,20 @@ public class PurchaseToken extends Activity{
             @Override
             public void onClick(View v) {
                 finish();
+                updateToken(tokenId);
+            }
+        });
+    }
 
-                //Add token destruction functionality as well
+    public void updateToken(String tokenId) {
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Tokens");
+        // Retrieve the object by id
+        query.getInBackground(tokenId, new GetCallback<ParseObject>() {
+            public void done(ParseObject token, ParseException e) {
+                if (e == null) {
+                    token.put("active", false);
+                    token.saveInBackground();
+                }
             }
         });
     }
