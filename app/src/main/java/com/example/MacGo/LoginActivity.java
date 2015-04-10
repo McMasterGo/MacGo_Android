@@ -122,7 +122,7 @@ public class LoginActivity extends Activity{
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         if ( !(activeNetworkInfo != null && activeNetworkInfo.isConnected()) ) {
-            Toast.makeText(LoginActivity.this, "Network Unavailable", Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this,  R.string.toast_internet, Toast.LENGTH_SHORT).show();
         }
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }

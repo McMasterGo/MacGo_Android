@@ -93,7 +93,7 @@ public class PurchaseItemHistory extends Activity{
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         if ( !(activeNetworkInfo != null && activeNetworkInfo.isConnected()) ) {
-            Toast.makeText(PurchaseItemHistory.this, "Network Unavailable", Toast.LENGTH_SHORT).show();
+            Toast.makeText(PurchaseItemHistory.this,  R.string.toast_internet, Toast.LENGTH_SHORT).show();
         }
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
