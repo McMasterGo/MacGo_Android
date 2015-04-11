@@ -1,9 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:orientation="vertical"
     android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="@dimen/textMarginStart"
+        android:layout_marginEnd="@dimen/textMarginStart">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passcode"
+            android:paddingBottom="@dimen/textPaddingTopBottom"
+            android:paddingTop="@dimen/textPaddingTopBottom"
+            android:id="@+id/text_passcode"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="@dimen/textMarginStart"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+         />
+        <com.gc.materialdesign.views.Switch
+            android:id="@+id/passcode_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/switchGreen"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/divider"
+            android:background="@android:color/white"
+            android:layout_below="@+id/text_passcode"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/change_passcode"
+            android:enabled="false"
+            android:textColor="@color/color_toggle"
+            android:text="Change Password"
+            android:paddingBottom="@dimen/textPaddingTopBottom"
+            android:paddingTop="@dimen/textPaddingTopBottom"
+            android:layout_below="@+id/divider"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="@dimen/textMarginStart"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+    </RelativeLayout>
+
+
     <Button
         android:layout_width="match_parent"
         android:text="Logout"
@@ -11,6 +59,7 @@
         android:textAllCaps="false"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:background="@color/skin"
+        android:layout_gravity="bottom"
         android:textColor="@android:color/white"
         android:layout_height="@dimen/abc_action_bar_default_height_material" />
-</LinearLayout>
+</FrameLayout>

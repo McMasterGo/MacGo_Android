@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.CompoundButton;
+import com.gc.materialdesign.views.Switch;
 import android.widget.TextView;
 
 import com.drivemode.android.typeface.TypefaceHelper;
@@ -18,12 +20,13 @@ import com.parse.ParseUser;
  * Created by KD on 4/10/15.
  */
 public class AccountSettings extends Activity {
-
+    private CompoundButton.OnCheckedChangeListener myListener = null;
+    TextView changePasscode;
     public void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.account_settings);
-
+        changePasscode = (TextView)findViewById(R.id.change_passcode);
         TypefaceHelper.getInstance().setTypeface(this, "fonts/Helvetica-Light.otf");
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
@@ -41,6 +44,28 @@ public class AccountSettings extends Activity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 finish();
+            }
+        });
+
+        Switch  passcodeSwitch = (Switch) findViewById(R.id.passcode_switch);
+
+        changePasscode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // PassCode implementation
+            }
+        });
+
+        passcodeSwitch.setOncheckListener(new Switch.OnCheckListener() {
+            @Override
+            public void onCheck(boolean b) {
+//                Log.e("MacGo::Account Settings","value of b :"+b);
+                if (b) {
+                    changePasscode.setEnabled(true);
+                }
+                else {
+                    changePasscode.setEnabled(false);
+                }
             }
         });
 
