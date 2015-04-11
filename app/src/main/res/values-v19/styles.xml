@@ -11,7 +11,7 @@
         <item name="colorPrimary">@color/darkSkin</item>
         <item name="colorPrimaryDark">@color/darkSkin</item>
         <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="android:backgroundDimAmount">0.1</item>
         <item name="android:background">@color/lightGreen</item>
     </style>
 </resources>

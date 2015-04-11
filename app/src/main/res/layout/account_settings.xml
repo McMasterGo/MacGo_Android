@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="bottom">
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
         android:layout_marginStart="@dimen/textMarginStart"
         android:layout_marginEnd="@dimen/textMarginStart">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Passcode"
+            android:background="@android:color/transparent"
             android:paddingBottom="@dimen/textPaddingTopBottom"
             android:paddingTop="@dimen/textPaddingTopBottom"
             android:id="@+id/text_passcode"
@@ -40,6 +40,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/change_passcode"
             android:enabled="false"
+            android:background="@android:color/transparent"
             android:textColor="@color/color_toggle"
             android:text="Change Password"
             android:paddingBottom="@dimen/textPaddingTopBottom"
