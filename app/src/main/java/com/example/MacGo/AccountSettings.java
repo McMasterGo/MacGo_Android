@@ -8,21 +8,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.CompoundButton;
-import com.gc.materialdesign.views.Switch;
+import com.rey.material.widget.Switch;
+
+
 import android.widget.TextView;
 
 import com.drivemode.android.typeface.TypefaceHelper;
 import com.parse.ParseUser;
-
-import java.io.FileOutputStream;
 
 
 /**
  * Created by KD on 4/10/15.
  */
 public class AccountSettings extends Activity {
-    private CompoundButton.OnCheckedChangeListener myListener = null;
     private TextView changePasscode;
 
     public void onCreate(Bundle savedInstanceState) {
@@ -54,15 +52,6 @@ public class AccountSettings extends Activity {
         Switch passcodeSwitch = (Switch) findViewById(R.id.passcode_switch);
         String css = Util.readDataFromStorage(getApplicationContext());
         String passcodeAttributes[] = css.split(",");
-        if(passcodeAttributes.length >=1){
-            if(passcodeAttributes[0].equals("1")){
-                passcodeSwitch.setChecked(true);
-            } else {
-                passcodeSwitch.setChecked(false);
-            }
-        } else {
-            passcodeSwitch.setChecked(false);
-        }
 
         changePasscode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,9 +61,10 @@ public class AccountSettings extends Activity {
             }
         });
 
-        passcodeSwitch.setOncheckListener(new Switch.OnCheckListener() {
+
+        passcodeSwitch.setOnCheckedChangeListener(new Switch.OnCheckedChangeListener() {
             @Override
-            public void onCheck(boolean b) {
+            public void onCheckedChanged(Switch aSwitch, boolean b) {
                 if (b) {
                     changePasscode.setEnabled(true);
                     String css = Util.readDataFromStorage(getApplicationContext());
@@ -98,6 +88,16 @@ public class AccountSettings extends Activity {
                 }
             }
         });
+
+        if(passcodeAttributes.length >=1){
+            if(passcodeAttributes[0].equals("1")){
+                passcodeSwitch.setChecked(true);
+            } else {
+                passcodeSwitch.setChecked(false);
+            }
+        } else {
+            passcodeSwitch.setChecked(false);
+        }
     }
 
     public void updateActionBar(){
