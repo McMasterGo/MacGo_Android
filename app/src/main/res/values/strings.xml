@@ -6,6 +6,9 @@
     <string name="action_settings">Settings</string>
     <string name="toast_internet">Network Unavailable</string>
     <string name="toast_balance">Insufficient Balance</string>
+    <string name="passcode_text">Enter your passcode</string>
+    <string name="passcode_new_text">Enter your new passcode</string>
+    <string name="passcode_confirm">Confirm your new passcode</string>
     <string name="action_previous">Previous</string>
     <string name="action_finish">Finish</string>
     <string name="action_next">Next</string>

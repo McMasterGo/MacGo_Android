@@ -43,6 +43,19 @@
     <!--</style>-->
 
     <!-- ActionBar styles -->
+    <style name="passcodeTheme" parent="Theme.AppCompat">
+
+        <item name="colorPrimary">@color/skin</item>
+        <item name="colorPrimaryDark">@color/skin</item>
+        <item name="homeAsUpIndicator">@null</item>
+        <item name="android:homeAsUpIndicator">@null</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/darkgreen</item>
+        <item name="android:windowBackground">@color/darkgreen</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+    </style>
 
 
     <style name="LayoutTheme" parent="android:Theme.Material.Light">

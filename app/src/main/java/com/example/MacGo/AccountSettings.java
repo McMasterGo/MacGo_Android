@@ -15,25 +15,29 @@ import android.widget.TextView;
 import com.drivemode.android.typeface.TypefaceHelper;
 import com.parse.ParseUser;
 
+import java.io.FileOutputStream;
+
 
 /**
  * Created by KD on 4/10/15.
  */
 public class AccountSettings extends Activity {
     private CompoundButton.OnCheckedChangeListener myListener = null;
-    TextView changePasscode;
+    private TextView changePasscode;
+
     public void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.account_settings);
-        changePasscode = (TextView)findViewById(R.id.change_passcode);
+        changePasscode = (TextView) findViewById(R.id.change_passcode);
         TypefaceHelper.getInstance().setTypeface(this, "fonts/Helvetica-Light.otf");
 
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         }
+
         getActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getActionBar().setCustomView(TypefaceHelper.getInstance().setTypeface(this,R.layout.main_actionbar, "fonts/Helvetica-Light.otf"));
+        getActionBar().setCustomView(TypefaceHelper.getInstance().setTypeface(this, R.layout.main_actionbar, "fonts/Helvetica-Light.otf"));
         updateActionBar();
 
         findViewById(R.id.action_logout).setOnClickListener(new View.OnClickListener() {
@@ -41,34 +45,59 @@ public class AccountSettings extends Activity {
             public void onClick(View v) {
                 ParseUser.getCurrentUser().logOut();
                 Intent intent = new Intent(AccountSettings.this, MyActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 finish();
             }
         });
 
-        Switch  passcodeSwitch = (Switch) findViewById(R.id.passcode_switch);
+        Switch passcodeSwitch = (Switch) findViewById(R.id.passcode_switch);
+        String css = Util.readDataFromStorage(getApplicationContext());
+        String passcodeAttributes[] = css.split(",");
+        if(passcodeAttributes.length >=1){
+            if(passcodeAttributes[0].equals("1")){
+                passcodeSwitch.setChecked(true);
+            } else {
+                passcodeSwitch.setChecked(false);
+            }
+        } else {
+            passcodeSwitch.setChecked(false);
+        }
 
         changePasscode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // PassCode implementation
+                Intent intent = new Intent(AccountSettings.this, ChangePasscodeActivity.class);
+                startActivity(intent);
             }
         });
 
         passcodeSwitch.setOncheckListener(new Switch.OnCheckListener() {
             @Override
             public void onCheck(boolean b) {
-//                Log.e("MacGo::Account Settings","value of b :"+b);
                 if (b) {
                     changePasscode.setEnabled(true);
-                }
-                else {
+                    String css = Util.readDataFromStorage(getApplicationContext());
+                    String passcodeAttributes[] = css.split(",");
+                    if (passcodeAttributes.length <= 1) {
+                        Util.writeDataToStorage("1", getApplicationContext());
+                        Intent intent = new Intent(AccountSettings.this, ChangePasscodeActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Util.writeDataToStorage("1\n" + passcodeAttributes[1], getApplicationContext());
+                    }
+                } else {
                     changePasscode.setEnabled(false);
+                    String css = Util.readDataFromStorage(getApplicationContext());
+                    String passcodeAttributes[] = css.split(",");
+                    if (passcodeAttributes.length == 1) {
+                        Util.writeDataToStorage("0", getApplicationContext());
+                    } else {
+                        Util.writeDataToStorage("0\n" + passcodeAttributes[1], getApplicationContext());
+                    }
                 }
             }
         });
-
     }
 
     public void updateActionBar(){

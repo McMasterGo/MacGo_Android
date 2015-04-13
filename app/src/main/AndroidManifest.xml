@@ -27,6 +27,8 @@
         <activity android:name=".PurchaseToken" android:theme="@android:style/Theme.Panel"/>
         <activity android:name=".PurchaseItemHistory" android:theme="@style/mytransparent.windowTitle"/>
         <activity android:name=".AccountSettings" android:theme="@style/mytransparent.windowTitle"/>
+        <activity android:name=".ChangePasscodeActivity" android:theme="@style/passcodeTheme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".PasscodeAuthenticationActivity" android:theme="@style/passcodeTheme" android:windowSoftInputMode="stateHidden|adjustResize"/>
 
     </application>
 </manifest>

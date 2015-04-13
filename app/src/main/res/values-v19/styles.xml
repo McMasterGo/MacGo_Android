@@ -11,7 +11,20 @@
         <item name="colorPrimary">@color/darkSkin</item>
         <item name="colorPrimaryDark">@color/darkSkin</item>
         <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:backgroundDimAmount">0.1</item>
+        <item name="android:backgroundDimAmount">0.6</item>
         <item name="android:background">@color/lightGreen</item>
     </style>
+
+    <style name="passcodeTheme" parent="Theme.AppCompat">
+
+        <item name="colorPrimary">@color/skin</item>
+        <item name="colorPrimaryDark">@color/skin</item>
+        <item name="homeAsUpIndicator">@null</item>
+        <item name="android:homeAsUpIndicator">@null</item>
+        <item name="android:windowBackground">@color/darkgreen</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
 </resources>
