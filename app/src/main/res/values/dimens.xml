@@ -12,7 +12,8 @@
     <dimen name="primaryTextSize">24sp</dimen>
     <dimen name="secondaryTextSize">20sp</dimen>
     <dimen name="textMarginStart">16dp</dimen>
-    <dimen name="categoryMargin">140dp</dimen>
+    <dimen name="categoryMarginVertical">-50dp</dimen>
+    <dimen name="categoryMarginHorizontal">-60dp</dimen>
     <dimen name="testPaddingLeft">16dp</dimen>
     <dimen name="textPaddingTopBottom">10dp</dimen>
     <dimen name="card_corner_radius">4dp</dimen>

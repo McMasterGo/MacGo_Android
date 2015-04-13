@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/tv_passcodeLabel"
         android:hint="@string/passcode_new_text"
-        android:textAppearance="?android:textAppearanceMedium"
+        android:textAppearance="?android:textAppearanceLarge"
         android:gravity="center"
         android:textColor="@android:color/white"
     />

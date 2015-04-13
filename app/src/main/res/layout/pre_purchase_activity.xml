@@ -32,14 +32,15 @@
             android:textColor="@color/skin"
             android:gravity="center"
             android:layout_below="@+id/txt_welcome"/>
+
         <RelativeLayout
             android:layout_width="72dp"
             android:layout_height="72dp"
-            android:layout_alignParentStart="true"
-
             android:background="@drawable/category_circle"
-            android:layout_marginStart="@dimen/textMarginStart"
-            android:layout_marginTop="@dimen/categoryMargin">
+            android:layout_alignStart="@+id/btn_purchase"
+            android:layout_alignTop="@+id/btn_purchase"
+            android:layout_marginStart="@dimen/categoryMarginHorizontal"
+            android:layout_marginTop="@dimen/categoryMarginVertical">
             <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -62,9 +63,10 @@
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:background="@drawable/category_circle"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="@dimen/textMarginStart"
-            android:layout_marginTop="@dimen/categoryMargin">
+            android:layout_marginEnd="@dimen/categoryMarginHorizontal"
+            android:layout_alignTop="@+id/btn_purchase"
+            android:layout_alignEnd="@+id/btn_purchase"
+            android:layout_marginTop="@dimen/categoryMarginVertical">
             <ImageButton
                 android:layout_width="72dp"
                 android:layout_height="72dp"
@@ -120,9 +122,10 @@
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:background="@drawable/category_circle"
-            android:layout_marginStart="@dimen/textMarginStart"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/categoryMargin">
+            android:layout_marginStart="@dimen/categoryMarginHorizontal"
+            android:layout_alignStart="@+id/btn_purchase"
+            android:layout_alignBottom="@+id/btn_purchase"
+            android:layout_marginBottom="@dimen/categoryMarginVertical">
             <ImageButton
                 android:layout_width="72dp"
                 android:layout_height="72dp"
@@ -165,10 +168,10 @@
             android:layout_width="72dp"
             android:layout_height="72dp"
             android:background="@drawable/category_circle"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/categoryMargin"
-            android:layout_marginEnd="@dimen/textMarginStart">
+            android:layout_alignEnd="@+id/btn_purchase"
+            android:layout_alignBottom="@+id/btn_purchase"
+            android:layout_marginBottom="@dimen/categoryMarginVertical"
+            android:layout_marginEnd="@dimen/categoryMarginHorizontal">
             <ImageButton
                 android:layout_width="72dp"
                 android:layout_height="72dp"
