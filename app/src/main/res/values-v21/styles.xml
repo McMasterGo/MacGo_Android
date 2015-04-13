@@ -34,14 +34,6 @@
 
     </style>
 
-    <!--<style name="MainActionBar" parent="android:Widget.Material.ActionBar">-->
-        <!--<item name="colorPrimary">@color/darkSkin</item>-->
-        <!--<item name="colorPrimaryDark">@color/darkSkin</item>-->
-        <!--<item name="android:background">?android:colorPrimaryDark</item>-->
-        <!--<item name="android:displayOptions">showTitle|homeAsUp</item>-->
-        <!--<item name="android:homeAsUpIndicator">@drawable/ic_ab_up</item>-->
-    <!--</style>-->
-
     <!-- ActionBar styles -->
     <style name="passcodeTheme" parent="Theme.AppCompat">
 
@@ -55,6 +47,11 @@
         <item name="android:windowNoTitle">false</item>
         <item name="android:windowActionBar">false</item>
         <item name="windowActionBar">false</item>
+
+        <item name="colorControlNormal">@color/disabled</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
     </style>
 
 
