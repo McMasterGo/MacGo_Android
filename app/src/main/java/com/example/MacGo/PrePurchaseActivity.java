@@ -43,12 +43,16 @@ public class PrePurchaseActivity extends Activity {
         purchaseButton = (RippleView) findViewById(R.id.btn_purchase);
         purchaseButton.setBackgroundColor(Color.TRANSPARENT);
 
-        findViewById(R.id.action_settings).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.rv_account_settings).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openSettings();
+                if (isNetworkAvailable()) {
+                    Intent intent = new Intent(PrePurchaseActivity.this, AccountSettings.class);
+                    startActivity(intent);
+                }
             }
         });
+
 
         findViewById(R.id.junk_category).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,21 +139,6 @@ public class PrePurchaseActivity extends Activity {
         userName.append(userFullName);
         userName.setTextColor(Color.WHITE);
 
-       userName.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               Handler handler = new Handler();
-               handler.postDelayed(new Runnable() {
-                   @Override
-                   public void run() {
-                       if (isNetworkAvailable()) {
-                           openSettings();
-                       }
-                   }
-               }, getResources().getInteger(R.integer.ripple_duration) * 2);
-           }
-       });
-
         refreshButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -181,17 +170,11 @@ public class PrePurchaseActivity extends Activity {
         findViewById(R.id.btn_recycle).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (isNetworkAvailable()) {
-                            Intent intent = new Intent(PrePurchaseActivity.this, PurchaseItemHistory.class);
-                            intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                            startActivity(intent);
-                        }
-                    }
-                }, getResources().getInteger(R.integer.ripple_duration)  * 2);
+                if (isNetworkAvailable()) {
+                    Intent intent = new Intent(PrePurchaseActivity.this, PurchaseItemHistory.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    startActivity(intent);
+                }
             }
         });
     }
@@ -257,10 +240,5 @@ public class PrePurchaseActivity extends Activity {
             finish();
         }
         return super.onKeyDown(keyCode, event);
-    }
-
-    public void openSettings(){
-        Intent intent = new Intent(PrePurchaseActivity.this, AccountSettings.class);
-        startActivity(intent);
     }
 }

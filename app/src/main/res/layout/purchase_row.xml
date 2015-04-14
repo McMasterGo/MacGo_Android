@@ -16,6 +16,7 @@
         android:layout_marginStart="@dimen/textMarginStart"
         android:layout_centerVertical="true"
         android:orientation="vertical"
+        android:background="@android:color/transparent"
         android:paddingTop="@dimen/textPaddingTopBottom"
         android:paddingBottom="@dimen/textPaddingTopBottom">
         <TextView
@@ -23,6 +24,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:text="LargeText"
+            android:background="@android:color/transparent"
             android:id="@+id/purchase_desc"
             android:textColor="@android:color/white"
             android:textSize="@dimen/primaryTextSize"/>
@@ -33,6 +35,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:id="@+id/purchase_date"
             android:textColor="@color/white"
+            android:background="@android:color/transparent"
             android:text="January 0 2015"
             android:textSize="@dimen/secondaryTextSize"
             />
@@ -41,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:textAppearance="?android:attr/textAppearanceListItem"
-
+        android:background="@android:color/transparent"
         android:hint="$0.00"
         android:paddingTop="@dimen/textPaddingTopBottom"
         android:paddingBottom="@dimen/textPaddingTopBottom"

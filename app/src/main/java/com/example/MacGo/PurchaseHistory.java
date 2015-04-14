@@ -68,15 +68,9 @@ public class PurchaseHistory extends FrameLayout {
                 new PurchaseTouchListener (mContext, new PurchaseTouchListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, final int position) {
-                        Handler handler = new Handler();
-                        handler.postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                    Log.d("The pos is" + position, "Position");
-                                    Util.setObject(getPurchaseId(position));
-                                    ((PurchaseItemHistory)context).removePurchaseView();
-                            }
-                        }, getResources().getInteger(R.integer.ripple_duration) * 2);
+                        Log.d("The pos is" + position, "Position");
+                        Util.setObject(getPurchaseId(position));
+                        ((PurchaseItemHistory)context).removePurchaseView();
                     }
                 })
         );

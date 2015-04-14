@@ -2,24 +2,8 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
         <item name="android:background">@color/darkgreen</item>
-        <item name="font">HelveticaLight</item>
         <item name="android:colorPrimaryDark">@color/darkgreen</item>
         <item name="android:navigationBarColor">@color/darkgreen</item>
-        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
-    </style>
-    <!-- Style to use for ALL text views (including FontTextView) -->
-    <!-- Use a different parent if you don't want Holo Light -->
-    <style name="MyTextViewStyle">
-        <item name="android:textAppearance">@style/MyTextAppearance</item>
-    </style>
-
-    <!-- Text appearance to use for ALL text views (including FontTextView) -->
-    <!-- Use a different parent if you don't want Holo Light -->
-    <style name="MyTextAppearance">
-        <!-- Alternatively, reference this font with the name "aspergit" -->
-        <!-- Note that only our own TextView's will use the font attribute -->
-        <item name="font">HelveticaLight</item>
-        <item name="android:textStyle">normal</item>
     </style>
 
     <style name="mytransparent.windowTitle"   parent="android:style/Theme.Translucent">
@@ -34,7 +18,6 @@
 
     </style>
 
-    <!-- ActionBar styles -->
     <style name="passcodeTheme" parent="Theme.AppCompat">
 
         <item name="colorPrimary">@color/skin</item>
@@ -63,7 +46,5 @@
         <item name="android:layout_height">1dp</item>
         <item name="android:background">@color/white</item>
     </style>
-
-
 
 </resources>

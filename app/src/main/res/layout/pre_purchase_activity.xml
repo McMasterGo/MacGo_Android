@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ripple="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:weightSum="1"
     android:id="@+id/pre_purchase">
 
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/relativePurchaseLayout">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_account_settings"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ripple"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="@dimen/ripplePadding"
+        android:paddingRight="@dimen/ripplePadding"
+        android:clickable="true"
+       >
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txt_welcome"
             android:hint="UserName"
-            android:layout_centerHorizontal="true"
             android:textColor="@android:color/white"
-            android:gravity="center"
+            android:background="@android:color/transparent"
             android:textSize="15.22pt"
-            android:paddingTop="0.30in" />
+             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="@android:color/transparent"
             android:id="@+id/action_settings"
             android:text="Account Settings"
             android:layout_centerHorizontal="true"
             android:textColor="@color/skin"
             android:gravity="center"
             android:layout_below="@+id/txt_welcome"/>
+    </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="72dp"
@@ -190,25 +197,20 @@
                 android:textSize="10.22pt"
                 android:gravity="center"/>
         </RelativeLayout>
-        <com.example.MacGo.RippleView
+        <Button
+            android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/low_padding"
-            ripple:rv_centered="true"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true">
-            <Button
-                android:clickable="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/skin"
 
-                android:id="@+id/btn_recycle"
-                android:textSize="9.4pt"
-                android:text="Account&#10;History"
-                android:background="@drawable/account_history"
-                   />
-        </com.example.MacGo.RippleView>
-    </RelativeLayout>
-</FrameLayout>
+            android:textColor="@color/skin"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_recycle"
+            android:textSize="9.4pt"
+            android:text="Account&#10;History"
+            android:paddingRight="@dimen/ripplePadding"
+            android:paddingLeft="@dimen/ripplePadding"
+            android:background="@drawable/ripple"
+       />
+</RelativeLayout>
 

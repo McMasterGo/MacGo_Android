@@ -11,6 +11,8 @@
     <dimen name="minHeight">8dp</dimen>
     <dimen name="primaryTextSize">24sp</dimen>
     <dimen name="secondaryTextSize">20sp</dimen>
+    <dimen name="ripplePadding">20dp</dimen>
+    <dimen name="rippleCornerRadius">30dp</dimen>
     <dimen name="textMarginStart">16dp</dimen>
     <dimen name="categoryMarginVertical">-50dp</dimen>
     <dimen name="categoryMarginHorizontal">-60dp</dimen>
