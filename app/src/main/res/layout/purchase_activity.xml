@@ -7,8 +7,8 @@
 
                 >
     <com.example.MacGo.CircularImageView
-            android:layout_width="@dimen/circle_dimen2"
-            android:layout_height="@dimen/circle_dimen2"
+            android:layout_width="@dimen/purchase_qr"
+            android:layout_height="@dimen/purchase_qr"
             android:id="@+id/imageView"
             app:border_color="#EEEEEE"
             app:border_width="4dp"

@@ -18,19 +18,24 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.drivemode.android.typeface.TypefaceHelper;
+import com.parse.FunctionCallback;
 import com.parse.GetCallback;
 
+import com.parse.ParseCloud;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 import java.text.DecimalFormat;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 public class PrePurchaseActivity extends Activity {
     private TextView userName;
     private TextView userBalance;
     private Button refreshButton;
     private RippleView purchaseButton;
-
+    public HashMap categories;
    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +66,7 @@ public class PrePurchaseActivity extends Activity {
                     findViewById(R.id.junk_category).setVisibility(View.INVISIBLE);
                     TextView junkCategoryStat = (TextView) findViewById(R.id.junk_category_stat);
                     junkCategoryStat.setVisibility(View.VISIBLE);
-                    junkCategoryStat.setText("20%");
+                    junkCategoryStat.setText(categories.get("Junk").toString() + "%");
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
@@ -80,7 +85,7 @@ public class PrePurchaseActivity extends Activity {
                    findViewById(R.id.drinks_category).setVisibility(View.INVISIBLE);
                    TextView drinksCategoryStat = (TextView) findViewById(R.id.drinks_category_stat);
                    drinksCategoryStat.setVisibility(View.VISIBLE);
-                   drinksCategoryStat.setText("21%");
+                   drinksCategoryStat.setText(categories.get("Beverage").toString() + "%");
                    new Handler().postDelayed(new Runnable() {
                        @Override
                        public void run() {
@@ -99,7 +104,7 @@ public class PrePurchaseActivity extends Activity {
                    findViewById(R.id.fruit_category).setVisibility(View.INVISIBLE);
                    TextView fruitCategoryStat = (TextView) findViewById(R.id.fruit_category_stat);
                    fruitCategoryStat.setVisibility(View.VISIBLE);
-                   fruitCategoryStat.setText("22%");
+                   fruitCategoryStat.setText(categories.get("Fruit").toString() + "%");
                    new Handler().postDelayed(new Runnable() {
                        @Override
                        public void run() {
@@ -118,7 +123,8 @@ public class PrePurchaseActivity extends Activity {
                    findViewById(R.id.candy_category).setVisibility(View.INVISIBLE);
                    TextView candyCategoryStat = (TextView) findViewById(R.id.candy_category_stat);
                    candyCategoryStat.setVisibility(View.VISIBLE);
-                   candyCategoryStat.setText("23%");
+                   candyCategoryStat.setText(categories.get("Candy").toString() + "%");
+//                   getCloudData();
                    new Handler().postDelayed(new Runnable() {
                        @Override
                        public void run() {
@@ -136,6 +142,7 @@ public class PrePurchaseActivity extends Activity {
 
         String userFullName = ParseUser.getCurrentUser().get("firstName").toString() + " " + ParseUser.getCurrentUser().get("lastName").toString();
         refreshAccountBalance(ParseUser.getCurrentUser());
+        getCloudData();
         userName.append(userFullName);
         userName.setTextColor(Color.WHITE);
 
@@ -144,6 +151,7 @@ public class PrePurchaseActivity extends Activity {
             public void onClick(View v) {
                 if (isNetworkAvailable()) {
                     refreshAccountBalance(ParseUser.getCurrentUser());
+                    getCloudData();
                 }
             }
         });
@@ -184,7 +192,6 @@ public class PrePurchaseActivity extends Activity {
             @Override
             public void done(ParseObject user, ParseException e) {
                 if (e == null) {
-
                     if (user.getNumber("balance") != null) {
                         DecimalFormat df = new DecimalFormat("0.00");
                         userBalance.setText("$" + Util.getDesiredDecimalPrecesion(user.
@@ -196,6 +203,19 @@ public class PrePurchaseActivity extends Activity {
                 } else {
                     Toast.makeText(PrePurchaseActivity.this, e.toString(), Toast.LENGTH_LONG).show();
                     Log.d("item", "Error: " + e.getMessage());
+                }
+            }
+        });
+    }
+
+    public void getCloudData() {
+        Map<String,String> params = new HashMap<String, String>();
+        params.put("userId",ParseUser.getCurrentUser().getObjectId());
+        ParseCloud.callFunctionInBackground("getStats", params, new FunctionCallback<Map<String,String>>() {
+            public void done(Map<String,String> result, ParseException e) {
+                if (e == null) {
+                    Log.e("Cloud","Result"+result);
+                    categories = new HashMap<String,String>(result);
                 }
             }
         });

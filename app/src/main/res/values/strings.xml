@@ -7,11 +7,14 @@
     <string name="toast_internet">Network Unavailable</string>
     <string name="toast_balance">Insufficient Balance</string>
     <string name="passcode_text">Enter your passcode</string>
+    <string name="change_password_text">Change Password</string>
+    <string name="setup_password_text">Setup Password</string>
     <string name="passcode_new_text">Enter your new passcode</string>
     <string name="passcode_confirm">Confirm your new passcode</string>
     <string name="action_previous">Previous</string>
     <string name="action_finish">Finish</string>
     <string name="action_next">Next</string>
+    <string name="category_default_value">0%</string>
     <integer name="ripple_duration">300</integer>
     <integer name="actionBarDefaultTextSize">30</integer>
     <integer name="actionBarMinTextSize">25</integer>

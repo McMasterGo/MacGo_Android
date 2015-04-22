@@ -14,13 +14,16 @@
     <dimen name="ripplePadding">20dp</dimen>
     <dimen name="rippleCornerRadius">30dp</dimen>
     <dimen name="textMarginStart">16dp</dimen>
-    <dimen name="categoryMarginVertical">-50dp</dimen>
-    <dimen name="categoryMarginHorizontal">-60dp</dimen>
+    <dimen name="categoryMarginVertical">-40dp</dimen>
+    <dimen name="categoryMarginHorizontal">-50dp</dimen>
     <dimen name="testPaddingLeft">16dp</dimen>
     <dimen name="textPaddingTopBottom">10dp</dimen>
     <dimen name="card_corner_radius">4dp</dimen>
     <dimen name="card_layout_margin">2dp</dimen>
     <dimen name="low_padding">0.118in</dimen>
     <dimen name="circle_dimen">1.377in</dimen>
-    <dimen name="circle_dimen2">1.40in</dimen>
+    <dimen name="purchase_qr">1.40in</dimen>
+    <dimen name="circle_dimen2">40dp</dimen>
+    <dimen name="circleSize">64dp</dimen>
+    <dimen name="category_text_size">22sp</dimen>
 </resources>

@@ -24,6 +24,7 @@
          />
         <com.rey.material.widget.Switch
             android:id="@+id/passcode_switch"
+            style="@style/Material.Widget.Switch"
             android:paddingBottom="@dimen/textPaddingTopBottom"
             android:background="@android:color/transparent"
             android:paddingTop="20dp"
@@ -49,7 +50,7 @@
             android:enabled="false"
             android:background="@android:color/transparent"
             android:textColor="@color/color_toggle"
-            android:text="Change Password"
+            android:text="@string/change_password_text"
             android:paddingBottom="@dimen/textPaddingTopBottom"
             android:paddingTop="@dimen/textPaddingTopBottom"
             android:layout_below="@+id/divider"

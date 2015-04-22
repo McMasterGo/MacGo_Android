@@ -52,7 +52,7 @@ public class PurchaseToken extends Activity{
             public void run() {
                 finish();
             }
-        }, 5000);
+        }, 120000);
 
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override

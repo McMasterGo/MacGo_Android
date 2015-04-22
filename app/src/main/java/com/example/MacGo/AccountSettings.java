@@ -45,6 +45,7 @@ public class AccountSettings extends Activity {
                 Intent intent = new Intent(AccountSettings.this, MyActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
+                Util.writeDataToStorage("", getApplicationContext());
                 finish();
             }
         });
@@ -89,13 +90,16 @@ public class AccountSettings extends Activity {
             }
         });
 
-        if(passcodeAttributes.length >=1){
+        if(passcodeAttributes[0].length() == 1){
+            changePasscode.setText(R.string.change_password_text);
             if(passcodeAttributes[0].equals("1")){
                 passcodeSwitch.setChecked(true);
             } else {
                 passcodeSwitch.setChecked(false);
             }
         } else {
+            //Passcode is not set
+            changePasscode.setText(R.string.setup_password_text);
             passcodeSwitch.setChecked(false);
         }
     }
