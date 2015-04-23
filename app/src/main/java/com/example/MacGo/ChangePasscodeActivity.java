@@ -19,6 +19,8 @@ import android.widget.Toolbar;
 
 import com.drivemode.android.typeface.TypefaceHelper;
 
+import java.util.HashMap;
+
 public class ChangePasscodeActivity extends Activity {
 
     private TextView passcodeTextView;
@@ -27,6 +29,9 @@ public class ChangePasscodeActivity extends Activity {
     private String passcode2 = "";
     EditText et_passcode1, et_passcode2, et_passcode3, et_passcode4;
     private String passcodeValue = "";
+
+    HashMap<String, String> hashMap;
+
     public void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
         super.onCreate(savedInstanceState);
@@ -34,7 +39,7 @@ public class ChangePasscodeActivity extends Activity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         }
-
+        hashMap = new HashMap<String, String>();
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayShowHomeEnabled(false);
         actionBar.setDisplayShowCustomEnabled(true);
@@ -167,26 +172,40 @@ public class ChangePasscodeActivity extends Activity {
             }
         }
     }
+    public boolean checkOldPassword(){
 
+        String css[] = Util.readDataFromStorage(getApplicationContext());
+        if(css[2].length() == 4) {
+            while (true) {
+                passcodeTextView.setText("Enter your old password");
+                if (css[2].equals(passcodeValue)) {
+                    return true;
+                }
+                resetEditTexts();
+                Util.changeFocus(et_passcode4, et_passcode1);
+                passcodeValue="";
+            }
+        } else return true;
+
+    }
     public void confirmPasscode() {
-        if(count < 1) {
+        if (count < 1) {
             passcode1 = passcodeValue;
             resetEditTexts();
-            Util.changeFocus(et_passcode4,et_passcode1);
+            Util.changeFocus(et_passcode4, et_passcode1);
             passcodeTextView.setText(R.string.passcode_confirm);
             count++;
         } else {
             passcode2 = passcodeValue;
-            if(passcode1.equals(passcode2)){
-                String css = Util.readDataFromStorage(getApplicationContext());
-                String passcodeAttributes[] = css.split(",");
-                Util.writeDataToStorage(passcodeAttributes[0] + "\n" + passcodeValue, getApplicationContext());
+            if (passcode1.equals(passcode2)) {
+
+                Util.writeDataToStorage(new String[]{"1", passcodeValue, "-1"}, getApplicationContext());
                 Toast.makeText(getApplicationContext(), "Passcode Saved", Toast.LENGTH_SHORT).show();
                 finish();
             } else {
                 Toast.makeText(getApplicationContext(), "Passcode doesn't match", Toast.LENGTH_SHORT).show();
                 count = 0;
-                Util.changeFocus(et_passcode4,et_passcode1);
+                Util.changeFocus(et_passcode4, et_passcode1);
                 resetEditTexts();
                 passcodeTextView.setText(R.string.passcode_new_text);
             }
@@ -215,10 +234,9 @@ public class ChangePasscodeActivity extends Activity {
     }
     @Override
     public void onBackPressed() {
-        String css = Util.readDataFromStorage(getApplicationContext());
-        String passcodeAttributes[] = css.split(",");
-        if (passcodeAttributes.length ==1)
-            Util.writeDataToStorage("0",this);
+        String css[] = Util.readDataFromStorage(getApplicationContext());
+        if (css[0].equals("-1"))
+            Util.writeDataToStorage(new String[]{"0","-1","-1"},this);
         super.onBackPressed();
     }
 }

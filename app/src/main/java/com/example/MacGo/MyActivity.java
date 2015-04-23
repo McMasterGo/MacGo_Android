@@ -20,9 +20,8 @@ public class MyActivity extends Activity {
         // Check if there is current user info
         if (ParseUser.getCurrentUser() != null) {
             // Start an intent for the logged in activity
-            String css = Util.readDataFromStorage(getApplicationContext());
-            String passcodeAttributes [] = css.split(",");
-            if (passcodeAttributes[0].equals("1")) {
+            String css[] = Util.readDataFromStorage(getApplicationContext());
+            if (css[0].equals("1")) {
                 startActivity(new Intent(this, PasscodeAuthenticationActivity.class));
             }
             else {

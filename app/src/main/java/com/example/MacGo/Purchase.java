@@ -1,11 +1,14 @@
 package com.example.MacGo;
 
+import android.util.Log;
+
 import com.parse.ParseObject;
 
 import java.text.DateFormat;
 import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.ArrayList;
 import java.util.Locale;
@@ -30,7 +33,16 @@ public class Purchase {
     public final String getPurchaseDateString(String outputFormat) {
         String formatDate = "00 MMMMM YYYY";
         Format sdf = new SimpleDateFormat(outputFormat, Locale.US);
-        formatDate = sdf.format(this.purchaseDate).toString();
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(this.purchaseDate);
+        int hours = calendar.get(Calendar.HOUR);
+        if (calendar.get(Calendar.AM_PM) == Calendar.PM) {
+            formatDate = sdf.format(this.purchaseDate).toString() + " @"+hours+"pm";
+
+        }
+        else {
+            formatDate = sdf.format(this.purchaseDate).toString() + " @"+hours+"am";
+        }
         return formatDate;
     }
 

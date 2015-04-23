@@ -52,6 +52,10 @@ public class PurchaseAdapter extends RecyclerView.Adapter <PurchaseAdapter.MyVie
             desc.setTextColor(Color.parseColor("#d0c17d"));
             date.setTextColor(Color.parseColor("#d0c17d"));
             cost.setTextColor(Color.parseColor("#d0c17d"));
+        }else{
+            desc.setTextColor(Color.parseColor("#ffffff"));
+            date.setTextColor(Color.parseColor("#ffffff"));
+            cost.setTextColor(Color.parseColor("#ffffff"));
         }
     }
 

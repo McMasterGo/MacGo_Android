@@ -36,7 +36,7 @@
             android:id="@+id/purchase_date"
             android:textColor="@color/white"
             android:background="@android:color/transparent"
-            android:text="January 0 2015"
+            android:text="January 0 2015 @ 6pm"
             android:textSize="@dimen/secondaryTextSize"
             />
     </LinearLayout>

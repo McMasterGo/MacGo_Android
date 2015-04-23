@@ -44,6 +44,10 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
             itemName.setTextColor(Color.parseColor("#d0c17d"));
             itemQuantity.setTextColor(Color.parseColor("#d0c17d"));
         }
+        else {
+            itemName.setTextColor(Color.parseColor("#ffffff"));
+            itemQuantity.setTextColor(Color.parseColor("#ffffff"));
+        }
     }
 
     @Override

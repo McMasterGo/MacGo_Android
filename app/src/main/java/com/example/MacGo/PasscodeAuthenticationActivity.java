@@ -149,9 +149,8 @@ public class PasscodeAuthenticationActivity extends Activity {
     }
 
     public void confirmPasscode(){
-        String css = Util.readDataFromStorage(getApplicationContext());
-        String passcodeAttributes[] = css.split(",");
-        if (passcodeValue.equals(passcodeAttributes[1])) {
+        String css[] = Util.readDataFromStorage(getApplicationContext());
+        if (passcodeValue.equals(css[1])) {
             startActivity(new Intent(PasscodeAuthenticationActivity.this, PrePurchaseActivity.class));
             finish();
         } else {

@@ -45,14 +45,13 @@ public class AccountSettings extends Activity {
                 Intent intent = new Intent(AccountSettings.this, MyActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
-                Util.writeDataToStorage("", getApplicationContext());
+                Util.resetData(getApplicationContext());
                 finish();
             }
         });
 
         passcodeSwitch = (Switch) findViewById(R.id.passcode_switch);
-        String css = Util.readDataFromStorage(getApplicationContext());
-        String passcodeAttributes[] = css.split(",");
+        String css[] = Util.readDataFromStorage(getApplicationContext());
 
         changePasscode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,45 +66,32 @@ public class AccountSettings extends Activity {
             public void onCheckedChanged(Switch aSwitch, boolean b) {
                 if (b) {
                     changePasscode.setEnabled(true);
-                    String css = Util.readDataFromStorage(getApplicationContext());
-                    String passcodeAttributes[] = css.split(",");
-                    if (passcodeAttributes.length <= 1) {
-                        Util.writeDataToStorage("1", getApplicationContext());
+                    String css[] = Util.readDataFromStorage(getApplicationContext());
+                    if (css[0].equals("-1")) {
+                        Util.writeDataToStorage(new String[]{"1", "-1", css[2]}, getApplicationContext());
                         callChangePasscode();
-                    } else {
-                        Util.writeDataToStorage("1\n" + passcodeAttributes[1], getApplicationContext());
                     }
                 } else {
                     changePasscode.setEnabled(false);
-                    String css = Util.readDataFromStorage(getApplicationContext());
-                    String passcodeAttributes[] = css.split(",");
-                    if (passcodeAttributes.length == 1) {
-                        Util.writeDataToStorage("0", getApplicationContext());
-                    } else {
-//                        Util.writeDataToStorage("0\n" + passcodeAttributes[1], getApplicationContext());
-                        Util.writeDataToStorage("", getApplicationContext());
-                    }
+                    String[] css = Util.readDataFromStorage(getApplicationContext());
+                    Util.writeDataToStorage(new String[]{"-1","-1",css[1]}, getApplicationContext());
                 }
             }
         });
 
-        if(passcodeAttributes[0].length() == 1){
-            if(passcodeAttributes[0].equals("1")){
-                passcodeSwitch.setChecked(true);
-            } else {
-                passcodeSwitch.setChecked(false);
-            }
-        } else {
-            //Passcode is not set
-//            changePasscode.setText(R.string.setup_password_text);
+        if (css[0].equals("1")) {
+            passcodeSwitch.setChecked(true);
+        } else if (css[0].equals("-1")) {
+            // Password is not set
+            passcodeSwitch.setChecked(false);
+        } else if (css[0].equals("0")){
             passcodeSwitch.setChecked(false);
         }
     }
 
     public void onResume(){
-        String css = Util.readDataFromStorage(getApplicationContext());
-        String passcodeAttributes[] = css.split(",");
-        if(passcodeAttributes[0].equals("0")) {
+        String css[] = Util.readDataFromStorage(getApplicationContext());
+        if(css[1].equals("-1")) {
             passcodeSwitch.setChecked(false);
         }
         super.onResume();

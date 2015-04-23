@@ -5,6 +5,7 @@ import com.parse.ParseObject;
 
 import java.text.Format;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
@@ -46,7 +47,16 @@ public class Item {
     public static String covertDataFormat(Date date, String format) {
         String formatDate = "00 MMMMM YYYY";
         Format sdf = new SimpleDateFormat(format, Locale.US);
-        formatDate = sdf.format(date).toString();
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        int hours = calendar.get(Calendar.HOUR);
+        if (calendar.get(Calendar.AM_PM) == Calendar.PM) {
+            formatDate = sdf.format(date).toString() + " @"+hours+"pm";
+
+        }
+        else {
+            formatDate = sdf.format(date).toString() + " @"+hours+"am";
+        }
         return formatDate;
     }
 
