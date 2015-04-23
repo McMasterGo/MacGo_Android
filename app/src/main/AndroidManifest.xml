@@ -23,12 +23,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity"/>
-        <activity android:name=".PrePurchaseActivity"/>
-        <activity android:name=".PurchaseToken" android:theme="@android:style/Theme.Panel"/>
-        <activity android:name=".PurchaseItemHistory" android:theme="@style/mytransparent.windowTitle"/>
-        <activity android:name=".AccountSettings" android:theme="@style/mytransparent.windowTitle"/>
-        <activity android:name=".ChangePasscodeActivity" android:theme="@style/passcodeTheme" android:windowSoftInputMode="stateHidden|adjustResize"/>
-        <activity android:name=".PasscodeAuthenticationActivity" android:theme="@style/passcodeTheme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".PrePurchaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".PurchaseToken" android:theme="@android:style/Theme.Panel" android:screenOrientation="portrait"/>
+        <activity android:name=".PurchaseItemHistory" android:theme="@style/mytransparent.windowTitle" android:screenOrientation="portrait"/>
+        <activity android:name=".AccountSettings" android:theme="@style/mytransparent.windowTitle" android:screenOrientation="portrait"/>
+        <activity android:name=".ChangePasscodeActivity" android:theme="@style/passcodeTheme" android:windowSoftInputMode="stateVisible|adjustResize" android:screenOrientation="portrait"/>
+        <activity android:name=".PasscodeAuthenticationActivity" android:theme="@style/passcodeTheme" android:windowSoftInputMode="stateVisible|adjustResize" android:screenOrientation="portrait"/>
 
     </application>
 </manifest>

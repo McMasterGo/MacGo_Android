@@ -22,7 +22,7 @@ import com.parse.ParseUser;
  */
 public class AccountSettings extends Activity {
     private TextView changePasscode;
-
+    private Switch passcodeSwitch;
     public void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_ACTION_BAR);
         super.onCreate(savedInstanceState);
@@ -50,18 +50,17 @@ public class AccountSettings extends Activity {
             }
         });
 
-        Switch passcodeSwitch = (Switch) findViewById(R.id.passcode_switch);
+        passcodeSwitch = (Switch) findViewById(R.id.passcode_switch);
         String css = Util.readDataFromStorage(getApplicationContext());
         String passcodeAttributes[] = css.split(",");
 
         changePasscode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AccountSettings.this, ChangePasscodeActivity.class);
-                startActivity(intent);
+                callChangePasscode();
             }
         });
-
+        changePasscode.setText(R.string.change_password_text);
 
         passcodeSwitch.setOnCheckedChangeListener(new Switch.OnCheckedChangeListener() {
             @Override
@@ -72,8 +71,7 @@ public class AccountSettings extends Activity {
                     String passcodeAttributes[] = css.split(",");
                     if (passcodeAttributes.length <= 1) {
                         Util.writeDataToStorage("1", getApplicationContext());
-                        Intent intent = new Intent(AccountSettings.this, ChangePasscodeActivity.class);
-                        startActivity(intent);
+                        callChangePasscode();
                     } else {
                         Util.writeDataToStorage("1\n" + passcodeAttributes[1], getApplicationContext());
                     }
@@ -84,14 +82,14 @@ public class AccountSettings extends Activity {
                     if (passcodeAttributes.length == 1) {
                         Util.writeDataToStorage("0", getApplicationContext());
                     } else {
-                        Util.writeDataToStorage("0\n" + passcodeAttributes[1], getApplicationContext());
+//                        Util.writeDataToStorage("0\n" + passcodeAttributes[1], getApplicationContext());
+                        Util.writeDataToStorage("", getApplicationContext());
                     }
                 }
             }
         });
 
         if(passcodeAttributes[0].length() == 1){
-            changePasscode.setText(R.string.change_password_text);
             if(passcodeAttributes[0].equals("1")){
                 passcodeSwitch.setChecked(true);
             } else {
@@ -99,9 +97,23 @@ public class AccountSettings extends Activity {
             }
         } else {
             //Passcode is not set
-            changePasscode.setText(R.string.setup_password_text);
+//            changePasscode.setText(R.string.setup_password_text);
             passcodeSwitch.setChecked(false);
         }
+    }
+
+    public void onResume(){
+        String css = Util.readDataFromStorage(getApplicationContext());
+        String passcodeAttributes[] = css.split(",");
+        if(passcodeAttributes[0].equals("0")) {
+            passcodeSwitch.setChecked(false);
+        }
+        super.onResume();
+    }
+
+    public void callChangePasscode(){
+        Intent intent = new Intent(AccountSettings.this, ChangePasscodeActivity.class);
+        startActivity(intent);
     }
 
     public void updateActionBar(){
